@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Harry Potter Ilke' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Harry Potter Ilke
+  pod 'Kingfisher', '~> 6.0'
+  pod 'SwiftLint'
+
+  target 'Harry Potter IlkeTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Harry Potter IlkeUITests' do
+    # Pods for testing
+  end
+
+end

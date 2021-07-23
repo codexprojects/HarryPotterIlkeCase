@@ -16,13 +16,20 @@ import Foundation
 
     var dataSource: UICollectionViewDiffableDataSource<Section, ProductList>! = nil
     var collectionView: UICollectionView! = nil
-
+    
+    // initial data
+    var data:[ProductList] = []
+    var indexOfPageRequest = 1
+    var loadingStatus = false
+    var myPaginationUpperLimit = 2000
+    var arrayCount = 0
+    
      override func viewDidLoad() {
         super.viewDidLoad()
         print("welcome")
         navigationItem.title = "Harry Potter"
         configureHierarchy()
-        configureDataSource()
+        loadData()
      }
  }
 
@@ -48,10 +55,11 @@ extension ProductListViewController {
 
 extension ProductListViewController {
     func configureHierarchy() {
+        data = getData()
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.backgroundColor = .systemBackground
-       // collectionView.delegate = self
+        collectionView.delegate = self
         view.addSubview(collectionView)
      }
     
@@ -64,7 +72,7 @@ extension ProductListViewController {
         return results
     }
     
-    func configureDataSource() {
+    func configureDataSource(pageIndex: Int) {
         let cellRegistration = UICollectionView.CellRegistration<ProductCell, ProductList> { (cell, indexPath, identifier) in
          // Populate the cell with our item description.
        
@@ -78,29 +86,54 @@ extension ProductListViewController {
          return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: identifier)
         }
 
-        // initial data
-        let data = getData()
-        
         var snapshot = NSDiffableDataSourceSnapshot<Section, ProductList>()
+        
         snapshot.appendSections([.main])
-        print(data.count)
-        snapshot.appendItems(Array(data))
+        snapshot.appendItems(Array(data.prefix(pageIndex * 20)))
+        arrayCount = snapshot.numberOfItems
         dataSource.apply(snapshot, animatingDifferences: false)
     }
     
+    func loadMoreData() {
+        let newArray = data[(arrayCount)...(indexOfPageRequest*20)]
+        print(newArray.count)
+        print(newArray.first?.title as Any)
+     
+        var snapshot = NSDiffableDataSourceSectionSnapshot<ProductList>()
+        snapshot.append(Array(newArray))
+        
+        dataSource.reorderingHandlers.didReorder = { [weak self] transaction in
+            guard let self = self else { return }
+            
+            self.dataSource.apply(snapshot, to: .main)
+                //arrayCount = arrayCount + newArray.count
+            
+        }
+        
+       
+        
+    }
     
 }
 
-//extension ProductListViewController: UICollectionViewDelegate {
-//
-//    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//        print("pagination will be added")
-//        let currentPage = collectionView.contentOffset.y / collectionView.frame.size.width
-//        print("currentPage \(currentPage)")
-//    }
-//
-//
-//}
+extension ProductListViewController: UICollectionViewDelegate {
+
+    func loadData(){
+        print("indexOfPageRequest \(indexOfPageRequest)")
+        configureDataSource(pageIndex: indexOfPageRequest)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+
+        if indexPath.row + 1 == arrayCount && arrayCount < myPaginationUpperLimit {
+            indexOfPageRequest += 1
+            loadMoreData()
+            print("load more")
+        }
+    }
+
+
+}
 
 extension ProductListViewController {
     private func readFile(forName name: String) -> Data? {

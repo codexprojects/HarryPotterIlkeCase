@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0A7B6BD00A7E9663DED8CD /* Pods_Harry_Potter_Ilke_Harry_Potter_IlkeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C09AECB9879FDDA46C30A34 /* Pods_Harry_Potter_Ilke_Harry_Potter_IlkeUITests.framework */; };
 		410EAD3426AAF23E0032B49D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410EAD3326AAF23E0032B49D /* Data.swift */; };
 		414B623926AAFF26003A7F36 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B623826AAFF26003A7F36 /* UIFont+Extensions.swift */; };
 		414B623C26AAFF7F003A7F36 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B623B26AAFF7F003A7F36 /* ThemeManager.swift */; };
@@ -19,6 +20,8 @@
 		41E0E20326AA135300EF06DA /* Harry_Potter_IlkeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E20226AA135300EF06DA /* Harry_Potter_IlkeUITests.swift */; };
 		41E0E24F26AA1A0300EF06DA /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E24E26AA1A0300EF06DA /* ProductCell.swift */; };
 		41E0E25126AA1ADB00EF06DA /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 41E0E25026AA1ADB00EF06DA /* products.json */; };
+		5584657D5B4F14C3599753B7 /* Pods_Harry_Potter_Ilke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3135E5BDA1175B04F3B91A /* Pods_Harry_Potter_Ilke.framework */; };
+		9ABA091A5F47CB320E35A517 /* Pods_Harry_Potter_IlkeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15EB3FDAC9D6023300A7610 /* Pods_Harry_Potter_IlkeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B8B341E972805990596B899 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harry Potter Ilke-Harry Potter IlkeUITests.release.xcconfig"; path = "Target Support Files/Pods-Harry Potter Ilke-Harry Potter IlkeUITests/Pods-Harry Potter Ilke-Harry Potter IlkeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		410EAD3326AAF23E0032B49D /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		414B623826AAFF26003A7F36 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		414B623B26AAFF7F003A7F36 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		414B623D26AB01FB003A7F36 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		4150E8400093E0BE71F66336 /* Pods-Harry Potter Ilke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harry Potter Ilke.debug.xcconfig"; path = "Target Support Files/Pods-Harry Potter Ilke/Pods-Harry Potter Ilke.debug.xcconfig"; sourceTree = "<group>"; };
 		41E0E1DD26AA134F00EF06DA /* Harry Potter Ilke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harry Potter Ilke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E0E1E026AA134F00EF06DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +62,13 @@
 		41E0E20426AA135300EF06DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41E0E24E26AA1A0300EF06DA /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		41E0E25026AA1ADB00EF06DA /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		53C35E172C662E4DB76D2A24 /* Pods-Harry Potter Ilke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harry Potter Ilke.release.xcconfig"; path = "Target Support Files/Pods-Harry Potter Ilke/Pods-Harry Potter Ilke.release.xcconfig"; sourceTree = "<group>"; };
+		64FC8AF6CA7FA1AEE56D896A /* Pods-Harry Potter IlkeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harry Potter IlkeTests.debug.xcconfig"; path = "Target Support Files/Pods-Harry Potter IlkeTests/Pods-Harry Potter IlkeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C09AECB9879FDDA46C30A34 /* Pods_Harry_Potter_Ilke_Harry_Potter_IlkeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harry_Potter_Ilke_Harry_Potter_IlkeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18648A2B82E5DB86B27EB99 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harry Potter Ilke-Harry Potter IlkeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Harry Potter Ilke-Harry Potter IlkeUITests/Pods-Harry Potter Ilke-Harry Potter IlkeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC3135E5BDA1175B04F3B91A /* Pods_Harry_Potter_Ilke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harry_Potter_Ilke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3547038D5015FD3C58CE88F /* Pods-Harry Potter IlkeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harry Potter IlkeTests.release.xcconfig"; path = "Target Support Files/Pods-Harry Potter IlkeTests/Pods-Harry Potter IlkeTests.release.xcconfig"; sourceTree = "<group>"; };
+		F15EB3FDAC9D6023300A7610 /* Pods_Harry_Potter_IlkeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harry_Potter_IlkeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5584657D5B4F14C3599753B7 /* Pods_Harry_Potter_Ilke.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ABA091A5F47CB320E35A517 /* Pods_Harry_Potter_IlkeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A0A7B6BD00A7E9663DED8CD /* Pods_Harry_Potter_Ilke_Harry_Potter_IlkeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +123,8 @@
 				41E0E1F626AA135300EF06DA /* Harry Potter IlkeTests */,
 				41E0E20126AA135300EF06DA /* Harry Potter IlkeUITests */,
 				41E0E1DE26AA134F00EF06DA /* Products */,
+				640111CE1393F1ADF91DAA9F /* Pods */,
+				73CE1F56F8744D9EF613F243 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +205,30 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		640111CE1393F1ADF91DAA9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4150E8400093E0BE71F66336 /* Pods-Harry Potter Ilke.debug.xcconfig */,
+				53C35E172C662E4DB76D2A24 /* Pods-Harry Potter Ilke.release.xcconfig */,
+				B18648A2B82E5DB86B27EB99 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests.debug.xcconfig */,
+				2B8B341E972805990596B899 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests.release.xcconfig */,
+				64FC8AF6CA7FA1AEE56D896A /* Pods-Harry Potter IlkeTests.debug.xcconfig */,
+				D3547038D5015FD3C58CE88F /* Pods-Harry Potter IlkeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		73CE1F56F8744D9EF613F243 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC3135E5BDA1175B04F3B91A /* Pods_Harry_Potter_Ilke.framework */,
+				8C09AECB9879FDDA46C30A34 /* Pods_Harry_Potter_Ilke_Harry_Potter_IlkeUITests.framework */,
+				F15EB3FDAC9D6023300A7610 /* Pods_Harry_Potter_IlkeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41E0E20726AA135300EF06DA /* Build configuration list for PBXNativeTarget "Harry Potter Ilke" */;
 			buildPhases = (
+				233FA17C4E6D0213489A32F0 /* [CP] Check Pods Manifest.lock */,
 				41E0E1D926AA134F00EF06DA /* Sources */,
 				41E0E1DA26AA134F00EF06DA /* Frameworks */,
 				41E0E1DB26AA134F00EF06DA /* Resources */,
+				631B6CDFE183870EFB32540B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -212,6 +255,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41E0E20A26AA135300EF06DA /* Build configuration list for PBXNativeTarget "Harry Potter IlkeTests" */;
 			buildPhases = (
+				D87FEFC4DC31FD7D0B73ED49 /* [CP] Check Pods Manifest.lock */,
 				41E0E1EF26AA135300EF06DA /* Sources */,
 				41E0E1F026AA135300EF06DA /* Frameworks */,
 				41E0E1F126AA135300EF06DA /* Resources */,
@@ -230,9 +274,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41E0E20D26AA135300EF06DA /* Build configuration list for PBXNativeTarget "Harry Potter IlkeUITests" */;
 			buildPhases = (
+				66DB535E1724DD36E2684679 /* [CP] Check Pods Manifest.lock */,
 				41E0E1FA26AA135300EF06DA /* Sources */,
 				41E0E1FB26AA135300EF06DA /* Frameworks */,
 				41E0E1FC26AA135300EF06DA /* Resources */,
+				BA8F4D1EF68B88444C13D267 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,6 +358,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		233FA17C4E6D0213489A32F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Harry Potter Ilke-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		631B6CDFE183870EFB32540B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Harry Potter Ilke/Pods-Harry Potter Ilke-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Harry Potter Ilke/Pods-Harry Potter Ilke-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Harry Potter Ilke/Pods-Harry Potter Ilke-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66DB535E1724DD36E2684679 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Harry Potter Ilke-Harry Potter IlkeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA8F4D1EF68B88444C13D267 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Harry Potter Ilke-Harry Potter IlkeUITests/Pods-Harry Potter Ilke-Harry Potter IlkeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Harry Potter Ilke-Harry Potter IlkeUITests/Pods-Harry Potter Ilke-Harry Potter IlkeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Harry Potter Ilke-Harry Potter IlkeUITests/Pods-Harry Potter Ilke-Harry Potter IlkeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D87FEFC4DC31FD7D0B73ED49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Harry Potter IlkeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		41E0E1D926AA134F00EF06DA /* Sources */ = {
@@ -489,6 +638,7 @@
 		};
 		41E0E20826AA135300EF06DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4150E8400093E0BE71F66336 /* Pods-Harry Potter Ilke.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -508,6 +658,7 @@
 		};
 		41E0E20926AA135300EF06DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53C35E172C662E4DB76D2A24 /* Pods-Harry Potter Ilke.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -527,6 +678,7 @@
 		};
 		41E0E20B26AA135300EF06DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64FC8AF6CA7FA1AEE56D896A /* Pods-Harry Potter IlkeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -549,6 +701,7 @@
 		};
 		41E0E20C26AA135300EF06DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3547038D5015FD3C58CE88F /* Pods-Harry Potter IlkeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -571,6 +724,7 @@
 		};
 		41E0E20E26AA135300EF06DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B18648A2B82E5DB86B27EB99 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -591,6 +745,7 @@
 		};
 		41E0E20F26AA135300EF06DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B8B341E972805990596B899 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

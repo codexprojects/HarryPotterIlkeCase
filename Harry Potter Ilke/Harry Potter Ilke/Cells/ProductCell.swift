@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ProductCell: UICollectionViewCell {
     let title = UILabel()
@@ -83,8 +84,9 @@ extension ProductCell {
         author.textColor = UIColor(hex: "4A4A4A")
         author.text = "\(productItem?.author ?? "")"
         
-        guard let imageURL = productItem?.imageURL else { return }
-        imageView.image = UIImage(data: try! Data(contentsOf: URL(string: imageURL)!))
+        guard let imageURL = productItem?.imageURL, let urlInstance = URL(string:imageURL.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)!) else { return }
+        imageView.kf.setImage(with: urlInstance)
+        //imageView.image = UIImage(data: try! Data(contentsOf: URL(string: imageURL)!))
     }
 }
 
