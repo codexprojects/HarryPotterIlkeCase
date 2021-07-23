@@ -29,7 +29,7 @@ import Foundation
 extension ProductListViewController {
  /// - Tag: Inset
     func createLayout() -> UICollectionViewLayout {
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.2),
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5),
                                           heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
@@ -64,14 +64,11 @@ extension ProductListViewController {
     }
     
     func configureDataSource() {
-        let cellRegistration = UICollectionView.CellRegistration<TextCell, ProductList> { (cell, indexPath, identifier) in
+        let cellRegistration = UICollectionView.CellRegistration<ProductCell, ProductList> { (cell, indexPath, identifier) in
          // Populate the cell with our item description.
-        cell.label.text = "\(identifier.title ?? "no title")"
-        cell.contentView.backgroundColor = .systemPink
-        cell.layer.borderColor = UIColor.black.cgColor
-        cell.layer.borderWidth = 1
-        cell.label.textAlignment = .center
-        cell.label.font = UIFont.preferredFont(forTextStyle: .title3)
+       
+            cell.productItem = identifier
+            
         }
      
         dataSource = UICollectionViewDiffableDataSource<Section, ProductList>(collectionView: collectionView) {

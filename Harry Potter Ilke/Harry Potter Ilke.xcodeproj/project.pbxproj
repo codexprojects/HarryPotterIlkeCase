@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		410EAD3426AAF23E0032B49D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410EAD3326AAF23E0032B49D /* Data.swift */; };
+		414B623926AAFF26003A7F36 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B623826AAFF26003A7F36 /* UIFont+Extensions.swift */; };
+		414B623C26AAFF7F003A7F36 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B623B26AAFF7F003A7F36 /* ThemeManager.swift */; };
+		414B623E26AB01FB003A7F36 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B623D26AB01FB003A7F36 /* UIColor+Extensions.swift */; };
 		41E0E1E126AA134F00EF06DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E026AA134F00EF06DA /* AppDelegate.swift */; };
 		41E0E1E526AA134F00EF06DA /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */; };
 		41E0E1EA26AA135200EF06DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E0E1E926AA135200EF06DA /* Assets.xcassets */; };
 		41E0E1ED26AA135200EF06DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E0E1EB26AA135200EF06DA /* LaunchScreen.storyboard */; };
 		41E0E1F826AA135300EF06DA /* Harry_Potter_IlkeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1F726AA135300EF06DA /* Harry_Potter_IlkeTests.swift */; };
 		41E0E20326AA135300EF06DA /* Harry_Potter_IlkeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E20226AA135300EF06DA /* Harry_Potter_IlkeUITests.swift */; };
-		41E0E24F26AA1A0300EF06DA /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E24E26AA1A0300EF06DA /* TextCell.swift */; };
+		41E0E24F26AA1A0300EF06DA /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E24E26AA1A0300EF06DA /* ProductCell.swift */; };
 		41E0E25126AA1ADB00EF06DA /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 41E0E25026AA1ADB00EF06DA /* products.json */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 
 /* Begin PBXFileReference section */
 		410EAD3326AAF23E0032B49D /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		414B623826AAFF26003A7F36 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		414B623B26AAFF7F003A7F36 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		414B623D26AB01FB003A7F36 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		41E0E1DD26AA134F00EF06DA /* Harry Potter Ilke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harry Potter Ilke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E0E1E026AA134F00EF06DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +55,7 @@
 		41E0E1FE26AA135300EF06DA /* Harry Potter IlkeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Harry Potter IlkeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E0E20226AA135300EF06DA /* Harry_Potter_IlkeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Harry_Potter_IlkeUITests.swift; sourceTree = "<group>"; };
 		41E0E20426AA135300EF06DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41E0E24E26AA1A0300EF06DA /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		41E0E24E26AA1A0300EF06DA /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		41E0E25026AA1ADB00EF06DA /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		414B623726AAFF00003A7F36 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				414B623826AAFF26003A7F36 /* UIFont+Extensions.swift */,
+				414B623D26AB01FB003A7F36 /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		414B623A26AAFF6A003A7F36 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				414B623B26AAFF7F003A7F36 /* ThemeManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		41E0E1D426AA134F00EF06DA = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +124,8 @@
 		41E0E1DF26AA134F00EF06DA /* Harry Potter Ilke */ = {
 			isa = PBXGroup;
 			children = (
+				414B623A26AAFF6A003A7F36 /* Managers */,
+				414B623726AAFF00003A7F36 /* Extensions */,
 				41E0E25226AA1AEF00EF06DA /* Resources */,
 				41E0E24D26AA19D300EF06DA /* Cells */,
 				41E0E24C26AA199B00EF06DA /* ProductList */,
@@ -140,7 +165,7 @@
 		41E0E24D26AA19D300EF06DA /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				41E0E24E26AA1A0300EF06DA /* TextCell.swift */,
+				41E0E24E26AA1A0300EF06DA /* ProductCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -294,9 +319,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				41E0E1E526AA134F00EF06DA /* ProductListViewController.swift in Sources */,
-				41E0E24F26AA1A0300EF06DA /* TextCell.swift in Sources */,
+				41E0E24F26AA1A0300EF06DA /* ProductCell.swift in Sources */,
 				41E0E1E126AA134F00EF06DA /* AppDelegate.swift in Sources */,
+				414B623926AAFF26003A7F36 /* UIFont+Extensions.swift in Sources */,
+				414B623E26AB01FB003A7F36 /* UIColor+Extensions.swift in Sources */,
 				410EAD3426AAF23E0032B49D /* Data.swift in Sources */,
+				414B623C26AAFF7F003A7F36 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
