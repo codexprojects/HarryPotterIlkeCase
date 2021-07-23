@@ -20,7 +20,7 @@ import Foundation
      override func viewDidLoad() {
         super.viewDidLoad()
         print("welcome")
-        navigationItem.title = "Product List"
+        navigationItem.title = "Harry Potter"
         configureHierarchy()
         configureDataSource()
      }
@@ -35,7 +35,7 @@ extension ProductListViewController {
         item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
 
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                           heightDimension: .fractionalWidth(0.2))
+                                           heightDimension: .fractionalWidth(0.4))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
                                                       subitems: [item])
 
@@ -51,6 +51,7 @@ extension ProductListViewController {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.backgroundColor = .systemBackground
+       // collectionView.delegate = self
         view.addSubview(collectionView)
      }
     
@@ -77,7 +78,7 @@ extension ProductListViewController {
          return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: identifier)
         }
 
-     // initial data
+        // initial data
         let data = getData()
         
         var snapshot = NSDiffableDataSourceSnapshot<Section, ProductList>()
@@ -86,7 +87,20 @@ extension ProductListViewController {
         snapshot.appendItems(Array(data))
         dataSource.apply(snapshot, animatingDifferences: false)
     }
+    
+    
 }
+
+//extension ProductListViewController: UICollectionViewDelegate {
+//
+//    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+//        print("pagination will be added")
+//        let currentPage = collectionView.contentOffset.y / collectionView.frame.size.width
+//        print("currentPage \(currentPage)")
+//    }
+//
+//
+//}
 
 extension ProductListViewController {
     private func readFile(forName name: String) -> Data? {

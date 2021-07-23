@@ -8,6 +8,6 @@
 import UIKit
 
 enum AppFonts: String {
-    case AvenirNextRegular    = "AvenirNext-Regular"
-    case AvenirNextSemiBold   = "AvenirNext-SemiBold"
+    case AvenirNextRegular    = "Avenir Next"
+    case AvenirNextSemiBold   = "Avenir Next Condensed"
 }
