@@ -14,7 +14,7 @@ import Foundation
         case main
      }
 
-    var dataSource: UICollectionViewDiffableDataSource<Section, Int>! = nil
+    var dataSource: UICollectionViewDiffableDataSource<Section, ProductList>! = nil
     var collectionView: UICollectionView! = nil
 
      override func viewDidLoad() {
@@ -54,36 +54,39 @@ extension ProductListViewController {
         view.addSubview(collectionView)
      }
     
-    func getData() {
-        let jsonData = readFile(forName: "products")
-        let jsonResult = try! JSONSerialization.jsonObject(with: jsonData!, options: .mutableLeaves)
-        print(jsonResult)
+    func getData() -> [ProductList] {
+       
+        guard let jsonData = readFile(forName: "products") else {
+            return [] }
+        let results = try! JSONDecoder().decode([ProductList].self, from: jsonData)
         
+        return results
     }
     
     func configureDataSource() {
-        let cellRegistration = UICollectionView.CellRegistration<TextCell, Int> { (cell, indexPath, identifier) in
+        let cellRegistration = UICollectionView.CellRegistration<TextCell, ProductList> { (cell, indexPath, identifier) in
          // Populate the cell with our item description.
-        cell.label.text = "\(identifier)"
+        cell.label.text = "\(identifier.title ?? "no title")"
         cell.contentView.backgroundColor = .systemPink
         cell.layer.borderColor = UIColor.black.cgColor
         cell.layer.borderWidth = 1
         cell.label.textAlignment = .center
-        cell.label.font = UIFont.preferredFont(forTextStyle: .title1)
+        cell.label.font = UIFont.preferredFont(forTextStyle: .title3)
         }
      
-        dataSource = UICollectionViewDiffableDataSource<Section, Int>(collectionView: collectionView) {
-         (collectionView: UICollectionView, indexPath: IndexPath, identifier: Int) -> UICollectionViewCell? in
+        dataSource = UICollectionViewDiffableDataSource<Section, ProductList>(collectionView: collectionView) {
+         (collectionView: UICollectionView, indexPath: IndexPath, identifier: ProductList) -> UICollectionViewCell? in
          // Return the cell.
          return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: identifier)
         }
 
      // initial data
-        getData()
+        let data = getData()
         
-        var snapshot = NSDiffableDataSourceSnapshot<Section, Int>()
+        var snapshot = NSDiffableDataSourceSnapshot<Section, ProductList>()
         snapshot.appendSections([.main])
-        snapshot.appendItems(Array(0..<25))
+        print(data.count)
+        snapshot.appendItems(Array(data))
         dataSource.apply(snapshot, animatingDifferences: false)
     }
 }
