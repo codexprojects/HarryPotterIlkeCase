@@ -26,8 +26,8 @@ extension AppDelegate {
     
     private func loadMainViewController() {
         navController = UINavigationController()
-        let viewController: ViewController = ViewController()
-        self.navController!.pushViewController(viewController, animated: false)
+        let productListViewController: ProductListViewController = ProductListViewController()
+        self.navController!.pushViewController(productListViewController, animated: false)
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window!.rootViewController = navController
         self.window!.backgroundColor = UIColor.white

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		41E0E1E126AA134F00EF06DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E026AA134F00EF06DA /* AppDelegate.swift */; };
-		41E0E1E526AA134F00EF06DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E426AA134F00EF06DA /* ViewController.swift */; };
+		41E0E1E526AA134F00EF06DA /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */; };
 		41E0E1EA26AA135200EF06DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E0E1E926AA135200EF06DA /* Assets.xcassets */; };
 		41E0E1ED26AA135200EF06DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E0E1EB26AA135200EF06DA /* LaunchScreen.storyboard */; };
 		41E0E1F826AA135300EF06DA /* Harry_Potter_IlkeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1F726AA135300EF06DA /* Harry_Potter_IlkeTests.swift */; };
@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		41E0E1DD26AA134F00EF06DA /* Harry Potter Ilke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harry Potter Ilke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E0E1E026AA134F00EF06DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41E0E1E426AA134F00EF06DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		41E0E1E926AA135200EF06DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41E0E1EC26AA135200EF06DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41E0E1EE26AA135200EF06DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 		41E0E24C26AA199B00EF06DA /* ProductList */ = {
 			isa = PBXGroup;
 			children = (
-				41E0E1E426AA134F00EF06DA /* ViewController.swift */,
+				41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */,
 			);
 			path = ProductList;
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41E0E1E526AA134F00EF06DA /* ViewController.swift in Sources */,
+				41E0E1E526AA134F00EF06DA /* ProductListViewController.swift in Sources */,
 				41E0E24F26AA1A0300EF06DA /* TextCell.swift in Sources */,
 				41E0E1E126AA134F00EF06DA /* AppDelegate.swift in Sources */,
 			);
