@@ -269,7 +269,6 @@
 				414B625C26AC7B27003A7F36 /* FlowCoordinators */,
 				414B623A26AAFF6A003A7F36 /* Managers */,
 				414B623726AAFF00003A7F36 /* Extensions */,
-				41E0E24D26AA19D300EF06DA /* Cells */,
 				414B627626AC7D15003A7F36 /* Views */,
 				41E0E25326AA1B0100EF06DA /* Data */,
 				41E0E1EB26AA135200EF06DA /* LaunchScreen.storyboard */,
@@ -299,6 +298,7 @@
 		41E0E24C26AA199B00EF06DA /* ProductList */ = {
 			isa = PBXGroup;
 			children = (
+				41E0E24D26AA19D300EF06DA /* Cells */,
 				41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */,
 				414B627726AC7D41003A7F36 /* ProductListViewController+Extensions.swift */,
 				414B627926AC7D5B003A7F36 /* ProductListNavigator.swift */,
