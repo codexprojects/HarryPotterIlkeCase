@@ -9,7 +9,7 @@
 import Foundation
 
 protocol ProductListNavigator: AutoMockable, AnyObject {
-    /// Presents the movies details screen
+    /// Presents the products details screen
   
 }
 

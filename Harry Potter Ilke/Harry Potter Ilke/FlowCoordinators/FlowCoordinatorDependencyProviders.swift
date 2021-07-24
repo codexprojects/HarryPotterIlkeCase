@@ -11,7 +11,7 @@ import UIKit
 protocol ApplicationFlowCoordinatorDependencyProvider: ProductListFlowCoordinatorDependencyProvider {}
 
 protocol ProductListFlowCoordinatorDependencyProvider: AnyObject {
-    /// Creates UIViewController to search for a movie
+    /// Creates UIViewController to list products
     func productListNavigationController(navigator: ProductListNavigator) -> UINavigationController
 
    

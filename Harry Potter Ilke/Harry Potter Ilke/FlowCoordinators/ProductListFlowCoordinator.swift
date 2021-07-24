@@ -7,7 +7,7 @@
 
 import UIKit
 
-/// The `ProductListFlowCoordinator` takes control over the flows on the movies search screen
+/// The `ProductListFlowCoordinator` takes control over the flows on the products list screen
 class ProductListFlowCoordinator: FlowCoordinator, ProductListNavigator {
     fileprivate let window: UIWindow
     fileprivate var productListNavigationController: UINavigationController?

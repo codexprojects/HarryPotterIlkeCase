@@ -23,10 +23,6 @@ final class ProductListViewModel: ProductListViewModelType {
         cancellables.forEach { $0.cancel() }
         cancellables.removeAll()
 
-//        input.selection
-//            .sink(receiveValue: { [unowned self] movieId in self.navigator?.showDetails(forMovie: movieId) })
-//            .store(in: &cancellables)
-
         let searchInput = input.search
             .debounce(for: .milliseconds(300), scheduler: Scheduler.mainScheduler)
             .removeDuplicates()

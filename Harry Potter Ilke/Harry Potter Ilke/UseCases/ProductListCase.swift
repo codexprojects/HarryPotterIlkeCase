@@ -10,7 +10,7 @@ import Combine
 
 protocol ProductListUseCaseType: AutoMockable {
 
-    /// Runs movies search with a query string
+    /// Gets products from local file
     func getProducts() -> AnyPublisher<Result<[ProductList], Error>, Never>
 }
 
