@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 public struct ProductList: Codable {
     let uuid = UUID()
@@ -21,8 +22,9 @@ public struct ProductList: Codable {
 // MARK: - Equatable
 extension ProductList: Equatable {}
 
+// MARK: - Equatable
 extension ProductList : Hashable {
-    public static func ==(lhs: ProductList, rhs: ProductList) -> Bool {
+    public static func == (lhs: ProductList, rhs: ProductList) -> Bool {
         return lhs.uuid == rhs.uuid
     }
 

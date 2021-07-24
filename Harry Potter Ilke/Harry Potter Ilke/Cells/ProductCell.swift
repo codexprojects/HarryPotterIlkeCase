@@ -86,7 +86,6 @@ extension ProductCell {
         
         guard let imageURL = productItem?.imageURL, let urlInstance = URL(string:imageURL.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)!) else { return }
         imageView.kf.setImage(with: urlInstance)
-        //imageView.image = UIImage(data: try! Data(contentsOf: URL(string: imageURL)!))
     }
 }
 
