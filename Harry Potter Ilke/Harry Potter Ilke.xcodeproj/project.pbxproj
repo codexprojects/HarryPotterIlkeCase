@@ -36,6 +36,8 @@
 		414B629F26ACA412003A7F36 /* ProductDetailViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B629E26ACA412003A7F36 /* ProductDetailViewControlller.swift */; };
 		414B62A126AD6ACD003A7F36 /* ProductListModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B62A026AD6ACD003A7F36 /* ProductListModelTest.swift */; };
 		414B62A326AD73DF003A7F36 /* ProductListControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B62A226AD73DF003A7F36 /* ProductListControllerTests.swift */; };
+		414B62A526ADB28C003A7F36 /* DefaultsManagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B62A426ADB28C003A7F36 /* DefaultsManagable.swift */; };
+		414B62A726ADB329003A7F36 /* Serializable+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B62A626ADB329003A7F36 /* Serializable+Protocol.swift */; };
 		41E0E1E126AA134F00EF06DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E026AA134F00EF06DA /* AppDelegate.swift */; };
 		41E0E1E526AA134F00EF06DA /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */; };
 		41E0E1EA26AA135200EF06DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E0E1E926AA135200EF06DA /* Assets.xcassets */; };
@@ -95,6 +97,8 @@
 		414B629E26ACA412003A7F36 /* ProductDetailViewControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewControlller.swift; sourceTree = "<group>"; };
 		414B62A026AD6ACD003A7F36 /* ProductListModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListModelTest.swift; sourceTree = "<group>"; };
 		414B62A226AD73DF003A7F36 /* ProductListControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListControllerTests.swift; sourceTree = "<group>"; };
+		414B62A426ADB28C003A7F36 /* DefaultsManagable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsManagable.swift; sourceTree = "<group>"; };
+		414B62A626ADB329003A7F36 /* Serializable+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Serializable+Protocol.swift"; sourceTree = "<group>"; };
 		4150E8400093E0BE71F66336 /* Pods-Harry Potter Ilke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harry Potter Ilke.debug.xcconfig"; path = "Target Support Files/Pods-Harry Potter Ilke/Pods-Harry Potter Ilke.debug.xcconfig"; sourceTree = "<group>"; };
 		41E0E1DD26AA134F00EF06DA /* Harry Potter Ilke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harry Potter Ilke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E0E1E026AA134F00EF06DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -240,6 +244,8 @@
 				414B629526AC83AF003A7F36 /* AutoMockable.swift */,
 				414B629726AC83C4003A7F36 /* AccessibilityIdentifiers.swift */,
 				414B629B26AC8465003A7F36 /* Log.swift */,
+				414B62A426ADB28C003A7F36 /* DefaultsManagable.swift */,
+				414B62A626ADB329003A7F36 /* Serializable+Protocol.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -628,7 +634,9 @@
 				414B626A26AC7B7B003A7F36 /* FlowCoordinator.swift in Sources */,
 				414B628426AC7F09003A7F36 /* ResourceFile.swift in Sources */,
 				414B627826AC7D41003A7F36 /* ProductListViewController+Extensions.swift in Sources */,
+				414B62A526ADB28C003A7F36 /* DefaultsManagable.swift in Sources */,
 				414B623E26AB01FB003A7F36 /* UIColor+Extensions.swift in Sources */,
+				414B62A726ADB329003A7F36 /* Serializable+Protocol.swift in Sources */,
 				414B627226AC7CA8003A7F36 /* ProductListFlowCoordinator.swift in Sources */,
 				414B626C26AC7B92003A7F36 /* ApplicationFlowCoordinator.swift in Sources */,
 				410EAD3426AAF23E0032B49D /* ProductList.swift in Sources */,

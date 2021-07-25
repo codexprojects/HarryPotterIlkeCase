@@ -12,9 +12,21 @@ class ProductCell: UICollectionViewCell {
     let title = UILabel()
     let author = UILabel()
     let imageView = UIImageView()
-    
-    static let reuseIdentifier = "text-cell-reuse-identifier"
+    let isFavorite = UILabel()
 
+    static let reuseIdentifier = "text-cell-reuse-identifier"
+    
+    var favoritesProducts: FavoritesProducts?
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        favoritesProducts = FavoritesProducts()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     var productItem: ProductList? {
         didSet {
             guard let product = productItem else { return }
@@ -26,6 +38,8 @@ class ProductCell: UICollectionViewCell {
 
 extension ProductCell {
     func configure(product: ProductList) {
+        favoritesProducts?.load()
+
         contentView.backgroundColor = .white
         layer.borderColor = UIColor.black.cgColor
         layer.borderWidth = 1
@@ -77,6 +91,26 @@ extension ProductCell {
         author.textColor = UIColor(hex: "4A4A4A")
         author.text = "\(product.author ?? "")"
         
+        
+        //isFavorite label setup
+        isFavorite.translatesAutoresizingMaskIntoConstraints = false
+        isFavorite.adjustsFontForContentSizeCategory = true
+        isFavorite.numberOfLines = 0
+        isFavorite.lineBreakMode = .byWordWrapping
+        contentView.addSubview(isFavorite)
+       
+        NSLayoutConstraint.activate([
+            isFavorite.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: inset),
+            isFavorite.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -inset),
+            isFavorite.topAnchor.constraint(equalTo: contentView.topAnchor, constant: inset),
+            isFavorite.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -inset)
+            ])
+        isFavorite.backgroundColor = .red
+        
+        if let isFav = favoritesProducts?.checkProductIsFavorited(product: product) {
+            isFavorite.text = isFav ? "Unfav" : "Fav"
+        }
+
         guard let imageURL = product.imageURL, let urlInstance = URL(string:imageURL.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)!) else { return }
         imageView.kf.setImage(with: urlInstance)
     }

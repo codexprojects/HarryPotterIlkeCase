@@ -33,7 +33,10 @@ extension ProductList: Equatable {}
 // MARK: - Equatable
 extension ProductList : Hashable {
     public static func == (lhs: ProductList, rhs: ProductList) -> Bool {
-        return lhs.uuid == rhs.uuid
+   
+        return lhs.title  == rhs.title &&
+            lhs.author == rhs.author &&
+            lhs.imageURL == rhs.imageURL
     }
 
     public func hash(into hasher: inout Hasher) {
