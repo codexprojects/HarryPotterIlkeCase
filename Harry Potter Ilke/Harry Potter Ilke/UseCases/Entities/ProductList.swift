@@ -9,13 +9,21 @@ import UIKit
 import Combine
 
 public struct ProductList: Codable {
-    let uuid = UUID()
+    var uuid = UUID()
 
     private enum CodingKeys : String, CodingKey { case title, author, imageURL }
     
-    let title: String?
-    let author: String?
-    let imageURL: String?
+    var title: String?
+    var author: String?
+    var imageURL: String?
+    
+    init(title: String? = nil,
+         author: String? = nil,
+         imageURL: String? = nil) {
+        self.title = title
+        self.author = author
+        self.imageURL = imageURL
+    }
 }
 
 

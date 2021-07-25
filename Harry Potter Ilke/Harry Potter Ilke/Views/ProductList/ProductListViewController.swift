@@ -27,12 +27,31 @@ import Combine
     private let viewModel: ProductListViewModelType
     var collectionView: UICollectionView! = nil
     var dataSource: UICollectionViewDiffableDataSource<Section, ProductList>! = nil
+    var snapshot = NSDiffableDataSourceSnapshot<Section, ProductList>()
     
     private var cancellables: [AnyCancellable] = []
  
     private let selection = PassthroughSubject<ProductList, Never>()
-    private let search = PassthroughSubject<String, Never>()
+    private let search = PassthroughSubject<Int, Never>()
     private let appear = PassthroughSubject<Void, Never>()
+    
+    
+    
+    // TODO: FIXTHIS
+    var currentPage: Int = 0
+    
+    var paginantionEnabled = false {
+        didSet {
+            if paginantionEnabled {
+                loadMore()
+            }
+        }
+    }
+    
+    func loadMore() {
+        currentPage += 1
+        search.send(currentPage)
+    }
     
      override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +59,7 @@ import Combine
         configureHierarchy()
         bind(to: viewModel)
         configureDataSource()
-        search.send("")
+        search.send(currentPage)
      }
  }
 
@@ -75,7 +94,7 @@ extension ProductListViewController {
             oslog.error("failure")
             update(with: [], animate: true)
         case .success(let products):
-            oslog.success("products count :\(products.count)")
+            paginantionEnabled = false
             update(with: products, animate: true)
         }
     }
@@ -85,10 +104,10 @@ fileprivate extension ProductListViewController {
   
     func update(with products: [ProductList], animate: Bool = true) {
         DispatchQueue.main.async {
-            var snapshot = NSDiffableDataSourceSnapshot<Section, ProductList>()
-            snapshot.appendSections([Section.main])
-            snapshot.appendItems(products, toSection: .main)
-            self.dataSource.apply(snapshot, animatingDifferences: animate)
+            self.snapshot.appendItems(products, toSection: .main)
+            self.dataSource.apply(self.snapshot, animatingDifferences: animate)
+            oslog.info(self.collectionView.numberOfItems(inSection: 0))
+            self.paginantionEnabled = false
         }
     }
 }

@@ -23,9 +23,9 @@ class ApplicationFlowCoordinator: FlowCoordinator {
 
     /// Creates all necessary dependencies and starts the flow
     func start() {
-        let searchFlowCoordinator = ProductListFlowCoordinator(window: window, dependencyProvider: self.dependencyProvider)
-        childCoordinators = [searchFlowCoordinator]
-        searchFlowCoordinator.start()
+        let productListFlowCoordinator = ProductListFlowCoordinator(window: window, dependencyProvider: self.dependencyProvider)
+        childCoordinators = [productListFlowCoordinator]
+        productListFlowCoordinator.start()
     }
 
 }

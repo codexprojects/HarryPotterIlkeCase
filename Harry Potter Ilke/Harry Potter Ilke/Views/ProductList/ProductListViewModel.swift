@@ -14,6 +14,15 @@ final class ProductListViewModel: ProductListViewModelType {
     private let useCase: ProductListUseCaseType
     private var cancellables: [AnyCancellable] = []
 
+    var currentPage: Int = 1
+    
+    var loadMore: Bool = false {
+        didSet {
+            self.currentPage += 1
+            /// request
+        }
+    }
+
     init(useCase: ProductListUseCaseType, navigator: ProductListNavigator) {
         self.useCase = useCase
         self.navigator = navigator
@@ -27,11 +36,12 @@ final class ProductListViewModel: ProductListViewModelType {
             .sink(receiveValue: { [unowned self] product in self.navigator?.showDetails(forProduct: product) })
             .store(in: &cancellables)
 
+        
         let searchInput = input.search
             .debounce(for: .milliseconds(300), scheduler: Scheduler.mainScheduler)
             .removeDuplicates()
         let products = searchInput
-            .flatMapLatest({[unowned self] query in self.useCase.getProducts() })
+            .flatMapLatest({[unowned self] paginationValue in self.useCase.getProducts(paginationValue: paginationValue) })
             .map({ result -> ProductListState in
                 switch result {
                 case .success(let products) where products.isEmpty: return .noResults
@@ -42,7 +52,7 @@ final class ProductListViewModel: ProductListViewModelType {
             .eraseToAnyPublisher()
 
         let initialState: ProductListViewModelOuput = .just(.idle)
-        let emptySearchString: ProductListViewModelOuput = searchInput.filter({ $0.isEmpty }).map({ _ in .idle }).eraseToAnyPublisher()
+        let emptySearchString: ProductListViewModelOuput = searchInput.filter({ $0 > 0 }).map({ _ in .idle }).eraseToAnyPublisher()
         let idle: ProductListViewModelOuput = Publishers.Merge(initialState, emptySearchString).eraseToAnyPublisher()
 
         return Publishers.Merge(idle, products).removeDuplicates().eraseToAnyPublisher()

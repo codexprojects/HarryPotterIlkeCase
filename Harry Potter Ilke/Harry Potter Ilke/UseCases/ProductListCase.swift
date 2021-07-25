@@ -11,7 +11,7 @@ import Combine
 protocol ProductListUseCaseType: AutoMockable {
 
     /// Gets products from local file
-    func getProducts() -> AnyPublisher<Result<[ProductList], Error>, Never>
+    func getProducts(paginationValue: Int) -> AnyPublisher<Result<[ProductList], Error>, Never>
 }
 
 final class ProductListUseCase: ProductListUseCaseType {
@@ -23,15 +23,15 @@ final class ProductListUseCase: ProductListUseCaseType {
     
     }
     
-    func getProducts() -> AnyPublisher<Result<[ProductList], Error>, Never> {
+    func getProducts(paginationValue: Int) -> AnyPublisher<Result<[ProductList], Error>, Never> {
+        oslog.info(paginationValue)
         return networkService
             .loadFromFile(ResourceFile<[ProductList]>.products(fileName: "products"))
-            .map { .success($0) }
+            .map { .success(slicePaginationArray(productList: $0, page: paginationValue)) }
             .catch { error -> AnyPublisher<Result<[ProductList], Error>, Never> in .just(.failure(error)) }
-            .subscribe(on: Scheduler.backgroundWorkScheduler)
+            .subscribe(on: Scheduler.mainScheduler)
             .receive(on: Scheduler.mainScheduler)
             .eraseToAnyPublisher()
     }
 
 }
-

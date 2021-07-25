@@ -34,6 +34,7 @@ extension ProductListViewController {
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.backgroundColor = .systemBackground
         collectionView.delegate = self
+        self.snapshot.appendSections([Section.main])
         view.addSubview(collectionView)
      }
 
@@ -54,8 +55,13 @@ extension ProductListViewController {
 extension ProductListViewController: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if !self.paginantionEnabled &&
+            indexPath.row + 1 == collectionView.numberOfItems(inSection: indexPath.section) {
+            self.paginantionEnabled = true
+            oslog.info("pagination will be set")
+        }
 
-        oslog.info("pagination will be set")
+       
     }
 
 }

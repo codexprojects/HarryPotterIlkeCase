@@ -11,7 +11,7 @@ struct ProductListViewModelInput {
     /// called when a screen becomes visible
     let appear: AnyPublisher<Void, Never>
     // triggered when the search query is updated
-    let search: AnyPublisher<String, Never>
+    let search: AnyPublisher<Int, Never>
     /// called when the user selected an item from the list
     let selection: AnyPublisher<ProductList, Never>
 }

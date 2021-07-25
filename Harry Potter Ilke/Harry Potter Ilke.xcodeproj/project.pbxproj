@@ -34,6 +34,8 @@
 		414B629826AC83C4003A7F36 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B629726AC83C4003A7F36 /* AccessibilityIdentifiers.swift */; };
 		414B629C26AC8465003A7F36 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B629B26AC8465003A7F36 /* Log.swift */; };
 		414B629F26ACA412003A7F36 /* ProductDetailViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B629E26ACA412003A7F36 /* ProductDetailViewControlller.swift */; };
+		414B62A126AD6ACD003A7F36 /* ProductListModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B62A026AD6ACD003A7F36 /* ProductListModelTest.swift */; };
+		414B62A326AD73DF003A7F36 /* ProductListControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B62A226AD73DF003A7F36 /* ProductListControllerTests.swift */; };
 		41E0E1E126AA134F00EF06DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E026AA134F00EF06DA /* AppDelegate.swift */; };
 		41E0E1E526AA134F00EF06DA /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */; };
 		41E0E1EA26AA135200EF06DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E0E1E926AA135200EF06DA /* Assets.xcassets */; };
@@ -91,6 +93,8 @@
 		414B629726AC83C4003A7F36 /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
 		414B629B26AC8465003A7F36 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		414B629E26ACA412003A7F36 /* ProductDetailViewControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewControlller.swift; sourceTree = "<group>"; };
+		414B62A026AD6ACD003A7F36 /* ProductListModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListModelTest.swift; sourceTree = "<group>"; };
+		414B62A226AD73DF003A7F36 /* ProductListControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListControllerTests.swift; sourceTree = "<group>"; };
 		4150E8400093E0BE71F66336 /* Pods-Harry Potter Ilke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harry Potter Ilke.debug.xcconfig"; path = "Target Support Files/Pods-Harry Potter Ilke/Pods-Harry Potter Ilke.debug.xcconfig"; sourceTree = "<group>"; };
 		41E0E1DD26AA134F00EF06DA /* Harry Potter Ilke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harry Potter Ilke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E0E1E026AA134F00EF06DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -275,10 +279,10 @@
 			children = (
 				41E0E25226AA1AEF00EF06DA /* Resources */,
 				414B629226AC837F003A7F36 /* Utils */,
+				414B623A26AAFF6A003A7F36 /* Managers */,
 				414B628626AC7F55003A7F36 /* Services */,
 				414B628026AC7ECD003A7F36 /* UseCases */,
 				414B625C26AC7B27003A7F36 /* FlowCoordinators */,
-				414B623A26AAFF6A003A7F36 /* Managers */,
 				414B623726AAFF00003A7F36 /* Extensions */,
 				414B627626AC7D15003A7F36 /* Views */,
 				41E0E25326AA1B0100EF06DA /* Data */,
@@ -293,6 +297,8 @@
 			children = (
 				41E0E1F726AA135300EF06DA /* Harry_Potter_IlkeTests.swift */,
 				41E0E1F926AA135300EF06DA /* Info.plist */,
+				414B62A026AD6ACD003A7F36 /* ProductListModelTest.swift */,
+				414B62A226AD73DF003A7F36 /* ProductListControllerTests.swift */,
 			);
 			path = "Harry Potter IlkeTests";
 			sourceTree = "<group>";
@@ -641,6 +647,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				41E0E1F826AA135300EF06DA /* Harry_Potter_IlkeTests.swift in Sources */,
+				414B62A126AD6ACD003A7F36 /* ProductListModelTest.swift in Sources */,
+				414B62A326AD73DF003A7F36 /* ProductListControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
