@@ -15,24 +15,17 @@ class ProductCell: UICollectionViewCell {
     
     static let reuseIdentifier = "text-cell-reuse-identifier"
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        configure()
-    }
-    required init?(coder: NSCoder) {
-        fatalError("not implemented")
-    }
-    
     var productItem: ProductList? {
         didSet {
-            configure()
+            guard let product = productItem else { return }
+            configure(product: product)
         }
     }
 
 }
 
 extension ProductCell {
-    func configure() {
+    func configure(product: ProductList) {
         contentView.backgroundColor = .white
         layer.borderColor = UIColor.black.cgColor
         layer.borderWidth = 1
@@ -67,7 +60,7 @@ extension ProductCell {
         title.textAlignment = .center
         title.font = .AvenirNextSemiBold(size: 12)
         title.textColor = UIColor(hex: "4A4A4A")
-        title.text = "\(productItem?.title ?? "")"
+        title.text = "\(product.title ?? "")"
         
         //author label setup
         author.translatesAutoresizingMaskIntoConstraints = false
@@ -82,9 +75,9 @@ extension ProductCell {
         author.textAlignment = .center
         author.font = .AvenirNextRegular(size: 11)
         author.textColor = UIColor(hex: "4A4A4A")
-        author.text = "\(productItem?.author ?? "")"
+        author.text = "\(product.author ?? "")"
         
-        guard let imageURL = productItem?.imageURL, let urlInstance = URL(string:imageURL.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)!) else { return }
+        guard let imageURL = product.imageURL, let urlInstance = URL(string:imageURL.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)!) else { return }
         imageView.kf.setImage(with: urlInstance)
     }
 }

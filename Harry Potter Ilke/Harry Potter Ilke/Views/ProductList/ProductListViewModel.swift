@@ -43,5 +43,6 @@ final class ProductListViewModel: ProductListViewModelType {
 
         return Publishers.Merge(idle, products).removeDuplicates().eraseToAnyPublisher()
     }
+    
 
 }

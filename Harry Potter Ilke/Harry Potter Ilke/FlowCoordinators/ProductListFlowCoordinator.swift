@@ -8,7 +8,7 @@
 import UIKit
 
 /// The `ProductListFlowCoordinator` takes control over the flows on the products list screen
-class ProductListFlowCoordinator: FlowCoordinator, ProductListNavigator {
+class ProductListFlowCoordinator: FlowCoordinator {
     fileprivate let window: UIWindow
     fileprivate var productListNavigationController: UINavigationController?
     fileprivate let dependencyProvider: ProductListFlowCoordinatorDependencyProvider
@@ -23,4 +23,13 @@ class ProductListFlowCoordinator: FlowCoordinator, ProductListNavigator {
         window.rootViewController = productListNavigationController
         self.productListNavigationController = productListNavigationController
     }
+}
+
+extension ProductListFlowCoordinator: ProductListNavigator {
+
+    func showDetails(forProduct productId: Int) {
+        let controller = self.dependencyProvider.productDetailsController(productId)
+        productListNavigationController?.pushViewController(controller, animated: true)
+    }
+
 }
