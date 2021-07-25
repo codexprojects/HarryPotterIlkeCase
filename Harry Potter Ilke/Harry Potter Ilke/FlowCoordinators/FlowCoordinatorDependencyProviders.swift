@@ -15,7 +15,7 @@ protocol ProductListFlowCoordinatorDependencyProvider: AnyObject {
     func productListNavigationController(navigator: ProductListNavigator) -> UINavigationController
 
     // Creates UIViewController to show the details of the movie with specified identifier
-    func productDetailsController(_ productId: Int) -> UIViewController
+    func productDetailsController(_ product: ProductList) -> UIViewController
    
 }
 

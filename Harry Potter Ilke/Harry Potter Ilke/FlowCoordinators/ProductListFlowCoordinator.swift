@@ -27,8 +27,8 @@ class ProductListFlowCoordinator: FlowCoordinator {
 
 extension ProductListFlowCoordinator: ProductListNavigator {
 
-    func showDetails(forProduct productId: Int) {
-        let controller = self.dependencyProvider.productDetailsController(productId)
+    func showDetails(forProduct product: ProductList) {
+        let controller = self.dependencyProvider.productDetailsController(product)
         productListNavigationController?.pushViewController(controller, animated: true)
     }
 

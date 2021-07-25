@@ -28,7 +28,7 @@ extension ApplicationComponentsFactory: ApplicationFlowCoordinatorDependencyProv
         return productListNavigationController
     }
 
-    func productDetailsController(_ productId: Int) -> UIViewController {
+    func productDetailsController(_ product: ProductList) -> UIViewController {
         //let viewModel = MovieDetailsViewModel(movieId: movieId, useCase: useCase)
         return ProductDetailViewControlller() //MovieDetailsViewController(viewModel: viewModel)
     }

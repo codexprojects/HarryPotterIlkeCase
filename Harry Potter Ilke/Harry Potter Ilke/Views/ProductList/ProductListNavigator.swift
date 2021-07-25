@@ -10,7 +10,7 @@ import Foundation
 
 protocol ProductListNavigator: AutoMockable, AnyObject {
     /// Presents the products details screen
-    func showDetails(forProduct productId: Int)
+    func showDetails(forProduct product: ProductList)
   
 }
 

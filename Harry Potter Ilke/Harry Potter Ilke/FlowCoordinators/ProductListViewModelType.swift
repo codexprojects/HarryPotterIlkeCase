@@ -13,7 +13,7 @@ struct ProductListViewModelInput {
     // triggered when the search query is updated
     let search: AnyPublisher<String, Never>
     /// called when the user selected an item from the list
-    let selection: AnyPublisher<Int, Never>
+    let selection: AnyPublisher<ProductList, Never>
 }
 
 enum ProductListState {

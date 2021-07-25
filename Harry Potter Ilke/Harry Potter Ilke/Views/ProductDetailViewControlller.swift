@@ -10,4 +10,8 @@ import Combine
 
 class ProductDetailViewControlller: UIViewController {
     
+    override func viewDidLoad() {
+       super.viewDidLoad()
+        oslog.info("this is product detail!")
+    }
 }

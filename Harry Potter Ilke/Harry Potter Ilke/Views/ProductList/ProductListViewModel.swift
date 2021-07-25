@@ -22,6 +22,10 @@ final class ProductListViewModel: ProductListViewModelType {
     func transform(input: ProductListViewModelInput) -> ProductListViewModelOuput {
         cancellables.forEach { $0.cancel() }
         cancellables.removeAll()
+        
+        input.selection
+            .sink(receiveValue: { [unowned self] product in self.navigator?.showDetails(forProduct: product) })
+            .store(in: &cancellables)
 
         let searchInput = input.search
             .debounce(for: .milliseconds(300), scheduler: Scheduler.mainScheduler)

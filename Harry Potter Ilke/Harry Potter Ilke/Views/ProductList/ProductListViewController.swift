@@ -30,7 +30,7 @@ import Combine
     
     private var cancellables: [AnyCancellable] = []
  
-    private let selection = PassthroughSubject<Int, Never>()
+    private let selection = PassthroughSubject<ProductList, Never>()
     private let search = PassthroughSubject<String, Never>()
     private let appear = PassthroughSubject<Void, Never>()
     
@@ -93,5 +93,10 @@ fileprivate extension ProductListViewController {
     }
 }
 
-
-
+extension ProductListViewController {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let snapshot = dataSource.snapshot()
+        selection.send(snapshot.itemIdentifiers[indexPath.row])
+        collectionView.deselectItem(at: indexPath, animated: true)
+    }
+}
