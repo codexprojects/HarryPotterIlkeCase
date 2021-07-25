@@ -38,6 +38,8 @@
 		414B62A326AD73DF003A7F36 /* ProductListControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B62A226AD73DF003A7F36 /* ProductListControllerTests.swift */; };
 		414B62A526ADB28C003A7F36 /* DefaultsManagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B62A426ADB28C003A7F36 /* DefaultsManagable.swift */; };
 		414B62A726ADB329003A7F36 /* Serializable+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B62A626ADB329003A7F36 /* Serializable+Protocol.swift */; };
+		418BE7A226ADF63D00ED931E /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7A126ADF63D00ED931E /* ProductDetailView.swift */; };
+		418BE7A426ADFAA000ED931E /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7A326ADFAA000ED931E /* ProductDetailViewModel.swift */; };
 		41E0E1E126AA134F00EF06DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E026AA134F00EF06DA /* AppDelegate.swift */; };
 		41E0E1E526AA134F00EF06DA /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */; };
 		41E0E1EA26AA135200EF06DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E0E1E926AA135200EF06DA /* Assets.xcassets */; };
@@ -100,6 +102,8 @@
 		414B62A426ADB28C003A7F36 /* DefaultsManagable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsManagable.swift; sourceTree = "<group>"; };
 		414B62A626ADB329003A7F36 /* Serializable+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Serializable+Protocol.swift"; sourceTree = "<group>"; };
 		4150E8400093E0BE71F66336 /* Pods-Harry Potter Ilke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harry Potter Ilke.debug.xcconfig"; path = "Target Support Files/Pods-Harry Potter Ilke/Pods-Harry Potter Ilke.debug.xcconfig"; sourceTree = "<group>"; };
+		418BE7A126ADF63D00ED931E /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		418BE7A326ADFAA000ED931E /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 		41E0E1DD26AA134F00EF06DA /* Harry Potter Ilke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harry Potter Ilke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E0E1E026AA134F00EF06DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
@@ -254,6 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				414B629E26ACA412003A7F36 /* ProductDetailViewControlller.swift */,
+				418BE7A326ADFAA000ED931E /* ProductDetailViewModel.swift */,
+				418BE7A126ADF63D00ED931E /* ProductDetailView.swift */,
 			);
 			name = ProductDetail;
 			sourceTree = "<group>";
@@ -617,9 +623,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				414B629826AC83C4003A7F36 /* AccessibilityIdentifiers.swift in Sources */,
+				418BE7A226ADF63D00ED931E /* ProductDetailView.swift in Sources */,
 				414B628D26AC8285003A7F36 /* NetworkService.swift in Sources */,
 				41E0E1E526AA134F00EF06DA /* ProductListViewController.swift in Sources */,
 				414B627A26AC7D5B003A7F36 /* ProductListNavigator.swift in Sources */,
+				418BE7A426ADFAA000ED931E /* ProductDetailViewModel.swift in Sources */,
 				41E0E24F26AA1A0300EF06DA /* ProductCell.swift in Sources */,
 				41E0E1E126AA134F00EF06DA /* AppDelegate.swift in Sources */,
 				414B627026AC7C68003A7F36 /* FlowCoordinatorDependencyProviders.swift in Sources */,

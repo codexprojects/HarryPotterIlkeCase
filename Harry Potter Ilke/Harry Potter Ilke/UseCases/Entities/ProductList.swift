@@ -30,7 +30,7 @@ public struct ProductList: Codable {
 // MARK: - Equatable
 extension ProductList: Equatable {}
 
-// MARK: - Equatable
+// MARK: - Hashable
 extension ProductList : Hashable {
     public static func == (lhs: ProductList, rhs: ProductList) -> Bool {
    
