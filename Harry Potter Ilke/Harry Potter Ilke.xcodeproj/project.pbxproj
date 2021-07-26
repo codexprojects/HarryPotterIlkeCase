@@ -43,6 +43,8 @@
 		418BE7A826AEBB0D00ED931E /* ImageDownsamplingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7A726AEBB0D00ED931E /* ImageDownsamplingOperation.swift */; };
 		418BE7AA26AEC9A900ED931E /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7A926AEC9A900ED931E /* Util.swift */; };
 		418BE7AD26AEFB4300ED931E /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 418BE7AC26AEFB4300ED931E /* .swiftlint.yml */; };
+		418BE7AF26AF0C9C00ED931E /* ApplicationFlowCoordinatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7AE26AF0C9C00ED931E /* ApplicationFlowCoordinatorTest.swift */; };
+		418BE7B126AF107E00ED931E /* ProductListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7B026AF107E00ED931E /* ProductListUseCaseTests.swift */; };
 		41E0E1E126AA134F00EF06DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E026AA134F00EF06DA /* AppDelegate.swift */; };
 		41E0E1E526AA134F00EF06DA /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */; };
 		41E0E1EA26AA135200EF06DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E0E1E926AA135200EF06DA /* Assets.xcassets */; };
@@ -110,6 +112,8 @@
 		418BE7A726AEBB0D00ED931E /* ImageDownsamplingOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownsamplingOperation.swift; sourceTree = "<group>"; };
 		418BE7A926AEC9A900ED931E /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		418BE7AC26AEFB4300ED931E /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		418BE7AE26AF0C9C00ED931E /* ApplicationFlowCoordinatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlowCoordinatorTest.swift; sourceTree = "<group>"; };
+		418BE7B026AF107E00ED931E /* ProductListUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListUseCaseTests.swift; sourceTree = "<group>"; };
 		41E0E1DD26AA134F00EF06DA /* Harry Potter Ilke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harry Potter Ilke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E0E1E026AA134F00EF06DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
@@ -204,8 +208,6 @@
 			isa = PBXGroup;
 			children = (
 				414B627E26AC7E51003A7F36 /* UIViewController+Child.swift */,
-				418BE7A526AEBAD000ED931E /* AsyncImageProcessor.swift */,
-				418BE7A726AEBB0D00ED931E /* ImageDownsamplingOperation.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -241,6 +243,8 @@
 		414B628926AC8199003A7F36 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				418BE7A726AEBB0D00ED931E /* ImageDownsamplingOperation.swift */,
+				418BE7A526AEBAD000ED931E /* AsyncImageProcessor.swift */,
 				414B628A26AC8245003A7F36 /* NetworkServiceType.swift */,
 				414B628C26AC8285003A7F36 /* NetworkService.swift */,
 				414B628E26AC8304003A7F36 /* Resource.swift */,
@@ -302,8 +306,8 @@
 				414B623A26AAFF6A003A7F36 /* Managers */,
 				414B628626AC7F55003A7F36 /* Services */,
 				414B628026AC7ECD003A7F36 /* UseCases */,
-				414B627626AC7D15003A7F36 /* Views */,
 				41E0E25326AA1B0100EF06DA /* Data */,
+				414B627626AC7D15003A7F36 /* Views */,
 				414B629226AC837F003A7F36 /* Utils */,
 				414B623726AAFF00003A7F36 /* Extensions */,
 				41E0E1EB26AA135200EF06DA /* LaunchScreen.storyboard */,
@@ -319,6 +323,8 @@
 				41E0E1F726AA135300EF06DA /* Harry_Potter_IlkeTests.swift */,
 				41E0E1F926AA135300EF06DA /* Info.plist */,
 				414B62A026AD6ACD003A7F36 /* ProductListModelTest.swift */,
+				418BE7AE26AF0C9C00ED931E /* ApplicationFlowCoordinatorTest.swift */,
+				418BE7B026AF107E00ED931E /* ProductListUseCaseTests.swift */,
 			);
 			path = "Harry Potter IlkeTests";
 			sourceTree = "<group>";
@@ -658,7 +664,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				41E0E1F826AA135300EF06DA /* Harry_Potter_IlkeTests.swift in Sources */,
+				418BE7B126AF107E00ED931E /* ProductListUseCaseTests.swift in Sources */,
 				414B62A126AD6ACD003A7F36 /* ProductListModelTest.swift in Sources */,
+				418BE7AF26AF0C9C00ED931E /* ApplicationFlowCoordinatorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

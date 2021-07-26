@@ -52,10 +52,14 @@ import Combine
         currentPage += 1
         search.send(currentPage)
     }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.accessibilityIdentifier = AccessibilityIdentifiers.ProductList.rootViewId
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        // To observe state of favorite product data bind moved to viewWillAppear from viewDidLoad.
+        // To observe state of favorite product data, funcs moved to viewWillAppear from viewDidLoad.
         configureHierarchy()
         bind(to: viewModel)
         configureDataSource()
