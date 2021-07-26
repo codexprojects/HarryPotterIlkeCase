@@ -39,9 +39,28 @@ extension ProductListViewController {
      }
 
     func configureDataSource() {
-        let cellRegistration = UICollectionView.CellRegistration<ProductCell, ProductList> { (cell, indexPath, identifier) in
+        let cellRegistration = UICollectionView.CellRegistration<ProductCell, ProductList> { [self] (cell, indexPath, identifier) in
          // Populate the cell with our item description.
             cell.productItem = identifier
+            
+            // Image processing
+            let maxDimentionInPixels = getMaxDimentionInPixelsFrom(cell, scale: collectionView.traitCollection.displayScale)
+            cell.representedId = identifier.uuid
+            
+            if let downsampledImage = imageProcessor.downsampledImage(for: identifier.uuid) {
+                cell.update(with: downsampledImage)
+            }
+            
+            cell.update(with: nil)
+            
+            guard let imageURL = identifier.imageURL, let urlInstance = URL(string:imageURL.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)!) else { return }
+            
+            imageProcessor.downsampleAsync(identifier.uuid, imageURL: urlInstance, maxDimentionInPixels: maxDimentionInPixels) { image in
+                DispatchQueue.main.async {
+                    guard cell.representedId == identifier.uuid else { return }
+                    cell.update(with: image)
+                }
+            }
         }
 
         dataSource = UICollectionViewDiffableDataSource<Section, ProductList>(collectionView: collectionView) {
@@ -60,9 +79,16 @@ extension ProductListViewController: UICollectionViewDelegate {
             self.paginantionEnabled = true
             oslog.info("pagination will be set")
         }
-
-       
     }
 
 }
 
+extension ProductListViewController {
+    
+    //MARK: Image helper
+    private func getMaxDimentionInPixelsFrom(_ cell: ProductCell, scale: CGFloat) -> CGFloat {
+        let imageViewSize = cell.imageView.bounds.size
+       
+        return max(imageViewSize.width, imageViewSize.height) * scale
+    }
+}

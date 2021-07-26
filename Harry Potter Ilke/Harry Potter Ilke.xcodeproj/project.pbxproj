@@ -35,11 +35,12 @@
 		414B629C26AC8465003A7F36 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B629B26AC8465003A7F36 /* Log.swift */; };
 		414B629F26ACA412003A7F36 /* ProductDetailViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B629E26ACA412003A7F36 /* ProductDetailViewControlller.swift */; };
 		414B62A126AD6ACD003A7F36 /* ProductListModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B62A026AD6ACD003A7F36 /* ProductListModelTest.swift */; };
-		414B62A326AD73DF003A7F36 /* ProductListControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B62A226AD73DF003A7F36 /* ProductListControllerTests.swift */; };
 		414B62A526ADB28C003A7F36 /* DefaultsManagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B62A426ADB28C003A7F36 /* DefaultsManagable.swift */; };
 		414B62A726ADB329003A7F36 /* Serializable+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B62A626ADB329003A7F36 /* Serializable+Protocol.swift */; };
 		418BE7A226ADF63D00ED931E /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7A126ADF63D00ED931E /* ProductDetailView.swift */; };
 		418BE7A426ADFAA000ED931E /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7A326ADFAA000ED931E /* ProductDetailViewModel.swift */; };
+		418BE7A626AEBAD000ED931E /* AsyncImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7A526AEBAD000ED931E /* AsyncImageProcessor.swift */; };
+		418BE7A826AEBB0D00ED931E /* ImageDownsamplingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7A726AEBB0D00ED931E /* ImageDownsamplingOperation.swift */; };
 		41E0E1E126AA134F00EF06DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E026AA134F00EF06DA /* AppDelegate.swift */; };
 		41E0E1E526AA134F00EF06DA /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */; };
 		41E0E1EA26AA135200EF06DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E0E1E926AA135200EF06DA /* Assets.xcassets */; };
@@ -98,12 +99,13 @@
 		414B629B26AC8465003A7F36 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		414B629E26ACA412003A7F36 /* ProductDetailViewControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewControlller.swift; sourceTree = "<group>"; };
 		414B62A026AD6ACD003A7F36 /* ProductListModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListModelTest.swift; sourceTree = "<group>"; };
-		414B62A226AD73DF003A7F36 /* ProductListControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListControllerTests.swift; sourceTree = "<group>"; };
 		414B62A426ADB28C003A7F36 /* DefaultsManagable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsManagable.swift; sourceTree = "<group>"; };
 		414B62A626ADB329003A7F36 /* Serializable+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Serializable+Protocol.swift"; sourceTree = "<group>"; };
 		4150E8400093E0BE71F66336 /* Pods-Harry Potter Ilke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harry Potter Ilke.debug.xcconfig"; path = "Target Support Files/Pods-Harry Potter Ilke/Pods-Harry Potter Ilke.debug.xcconfig"; sourceTree = "<group>"; };
 		418BE7A126ADF63D00ED931E /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		418BE7A326ADFAA000ED931E /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		418BE7A526AEBAD000ED931E /* AsyncImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageProcessor.swift; sourceTree = "<group>"; };
+		418BE7A726AEBB0D00ED931E /* ImageDownsamplingOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownsamplingOperation.swift; sourceTree = "<group>"; };
 		41E0E1DD26AA134F00EF06DA /* Harry Potter Ilke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harry Potter Ilke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E0E1E026AA134F00EF06DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
@@ -180,7 +182,6 @@
 				414B626D26AC7BB9003A7F36 /* ApplicationComponentsFactory.swift */,
 				414B626F26AC7C68003A7F36 /* FlowCoordinatorDependencyProviders.swift */,
 				414B627126AC7CA8003A7F36 /* ProductListFlowCoordinator.swift */,
-				414B627326AC7CEF003A7F36 /* ProductListViewModelType.swift */,
 			);
 			path = FlowCoordinators;
 			sourceTree = "<group>";
@@ -199,6 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				414B627E26AC7E51003A7F36 /* UIViewController+Child.swift */,
+				418BE7A526AEBAD000ED931E /* AsyncImageProcessor.swift */,
+				418BE7A726AEBB0D00ED931E /* ImageDownsamplingOperation.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -290,14 +293,14 @@
 			isa = PBXGroup;
 			children = (
 				41E0E25226AA1AEF00EF06DA /* Resources */,
-				414B629226AC837F003A7F36 /* Utils */,
+				414B625C26AC7B27003A7F36 /* FlowCoordinators */,
 				414B623A26AAFF6A003A7F36 /* Managers */,
 				414B628626AC7F55003A7F36 /* Services */,
 				414B628026AC7ECD003A7F36 /* UseCases */,
-				414B625C26AC7B27003A7F36 /* FlowCoordinators */,
-				414B623726AAFF00003A7F36 /* Extensions */,
 				414B627626AC7D15003A7F36 /* Views */,
 				41E0E25326AA1B0100EF06DA /* Data */,
+				414B629226AC837F003A7F36 /* Utils */,
+				414B623726AAFF00003A7F36 /* Extensions */,
 				41E0E1EB26AA135200EF06DA /* LaunchScreen.storyboard */,
 				41E0E1EE26AA135200EF06DA /* Info.plist */,
 			);
@@ -310,7 +313,6 @@
 				41E0E1F726AA135300EF06DA /* Harry_Potter_IlkeTests.swift */,
 				41E0E1F926AA135300EF06DA /* Info.plist */,
 				414B62A026AD6ACD003A7F36 /* ProductListModelTest.swift */,
-				414B62A226AD73DF003A7F36 /* ProductListControllerTests.swift */,
 			);
 			path = "Harry Potter IlkeTests";
 			sourceTree = "<group>";
@@ -332,6 +334,7 @@
 				414B627726AC7D41003A7F36 /* ProductListViewController+Extensions.swift */,
 				414B627926AC7D5B003A7F36 /* ProductListNavigator.swift */,
 				414B627B26AC7DBA003A7F36 /* ProductListViewModel.swift */,
+				414B627326AC7CEF003A7F36 /* ProductListViewModelType.swift */,
 			);
 			path = ProductList;
 			sourceTree = "<group>";
@@ -395,7 +398,6 @@
 				41E0E1D926AA134F00EF06DA /* Sources */,
 				41E0E1DA26AA134F00EF06DA /* Frameworks */,
 				41E0E1DB26AA134F00EF06DA /* Resources */,
-				631B6CDFE183870EFB32540B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -433,7 +435,6 @@
 				41E0E1FA26AA135300EF06DA /* Sources */,
 				41E0E1FB26AA135300EF06DA /* Frameworks */,
 				41E0E1FC26AA135300EF06DA /* Resources */,
-				BA8F4D1EF68B88444C13D267 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -537,23 +538,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		631B6CDFE183870EFB32540B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Harry Potter Ilke/Pods-Harry Potter Ilke-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Harry Potter Ilke/Pods-Harry Potter Ilke-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Harry Potter Ilke/Pods-Harry Potter Ilke-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		66DB535E1724DD36E2684679 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -574,23 +558,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BA8F4D1EF68B88444C13D267 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Harry Potter Ilke-Harry Potter IlkeUITests/Pods-Harry Potter Ilke-Harry Potter IlkeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Harry Potter Ilke-Harry Potter IlkeUITests/Pods-Harry Potter Ilke-Harry Potter IlkeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Harry Potter Ilke-Harry Potter IlkeUITests/Pods-Harry Potter Ilke-Harry Potter IlkeUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D87FEFC4DC31FD7D0B73ED49 /* [CP] Check Pods Manifest.lock */ = {
@@ -625,6 +592,7 @@
 				414B629826AC83C4003A7F36 /* AccessibilityIdentifiers.swift in Sources */,
 				418BE7A226ADF63D00ED931E /* ProductDetailView.swift in Sources */,
 				414B628D26AC8285003A7F36 /* NetworkService.swift in Sources */,
+				418BE7A626AEBAD000ED931E /* AsyncImageProcessor.swift in Sources */,
 				41E0E1E526AA134F00EF06DA /* ProductListViewController.swift in Sources */,
 				414B627A26AC7D5B003A7F36 /* ProductListNavigator.swift in Sources */,
 				418BE7A426ADFAA000ED931E /* ProductDetailViewModel.swift in Sources */,
@@ -651,6 +619,7 @@
 				414B629C26AC8465003A7F36 /* Log.swift in Sources */,
 				414B628226AC7EE5003A7F36 /* ProductListCase.swift in Sources */,
 				414B628B26AC8245003A7F36 /* NetworkServiceType.swift in Sources */,
+				418BE7A826AEBB0D00ED931E /* ImageDownsamplingOperation.swift in Sources */,
 				414B627C26AC7DBA003A7F36 /* ProductListViewModel.swift in Sources */,
 				414B629626AC83AF003A7F36 /* AutoMockable.swift in Sources */,
 				414B623C26AAFF7F003A7F36 /* ThemeManager.swift in Sources */,
@@ -664,7 +633,6 @@
 			files = (
 				41E0E1F826AA135300EF06DA /* Harry_Potter_IlkeTests.swift in Sources */,
 				414B62A126AD6ACD003A7F36 /* ProductListModelTest.swift in Sources */,
-				414B62A326AD73DF003A7F36 /* ProductListControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

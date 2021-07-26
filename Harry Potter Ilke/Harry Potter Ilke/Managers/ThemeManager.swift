@@ -24,6 +24,7 @@ public func readFile(forName name: String) -> Data? {
     return nil
 }
 
+
 public func slicePaginationArray(productList: Array<ProductList>, page: Int) -> Array<ProductList> {
     if productList.isEmpty { return [] }
     let perPage = 20
@@ -31,4 +32,3 @@ public func slicePaginationArray(productList: Array<ProductList>, page: Int) -> 
     let range = (page * perPage)..<((page + 1) * perPage)
     return Array(productList[range])
 }
-

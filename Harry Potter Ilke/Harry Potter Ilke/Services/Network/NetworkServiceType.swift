@@ -11,9 +11,6 @@ import Combine
 protocol NetworkServiceType: AnyObject {
 
     @discardableResult
-    func load<T>(_ resource: Resource<T>) -> AnyPublisher<T, Error>
-    
-    @discardableResult
     func loadFromFile<T>(_ resource: ResourceFile<T>) -> AnyPublisher<T, Error>
 }
 

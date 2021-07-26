@@ -35,9 +35,10 @@ import Combine
     private let search = PassthroughSubject<Int, Never>()
     private let appear = PassthroughSubject<Void, Never>()
     
+    let imageProcessor = AsyncImageProcessor()
     
     
-    // TODO: FIXTHIS
+    // TODO: FIXTHIS -> Mus be moved to VM
     var currentPage: Int = 0
     
     var paginantionEnabled = false {

@@ -29,7 +29,7 @@ final class ProductListUseCase: ProductListUseCaseType {
             .loadFromFile(ResourceFile<[ProductList]>.products(fileName: "products"))
             .map { .success(slicePaginationArray(productList: $0, page: paginationValue)) }
             .catch { error -> AnyPublisher<Result<[ProductList], Error>, Never> in .just(.failure(error)) }
-            .subscribe(on: Scheduler.mainScheduler)
+            .subscribe(on: Scheduler.backgroundWorkScheduler)
             .receive(on: Scheduler.mainScheduler)
             .eraseToAnyPublisher()
     }
