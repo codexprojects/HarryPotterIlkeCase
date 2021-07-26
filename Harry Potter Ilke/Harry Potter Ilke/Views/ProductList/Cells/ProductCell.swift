@@ -132,7 +132,6 @@ extension ProductCell {
             isFavorite.text = isFav ? "Favorited" : ""
             isFavorite.isHidden = isFav ? false : true
         }
-  
     }
     
     func update(with image: UIImage?) {

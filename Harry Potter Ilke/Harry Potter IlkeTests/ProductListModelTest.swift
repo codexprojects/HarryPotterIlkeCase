@@ -40,9 +40,6 @@ class ProductListModelTest: XCTestCase {
         XCTAssert(sut?.uuid != nil)
     }
 
-    func testUUIDHede() {
-        print(sut?.uuid)
-    }
     
     func testCompareProduct() {
         let sut2 = ProductList(title: "Title2", author: "Author2", imageURL: "imageURL2")

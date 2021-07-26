@@ -44,7 +44,7 @@ extension ProductListViewController {
             cell.productItem = identifier
             
             // Image processing
-            let maxDimentionInPixels = getMaxDimentionInPixelsFrom(cell, scale: collectionView.traitCollection.displayScale)
+            let maxDimentionInPixels = getMaxDimentionInPixelsFrom(cell.imageView, scale: collectionView.traitCollection.displayScale)
             cell.representedId = identifier.uuid
             
             if let downsampledImage = imageProcessor.downsampledImage(for: identifier.uuid) {
@@ -81,14 +81,4 @@ extension ProductListViewController: UICollectionViewDelegate {
         }
     }
 
-}
-
-extension ProductListViewController {
-    
-    //MARK: Image helper
-    private func getMaxDimentionInPixelsFrom(_ cell: ProductCell, scale: CGFloat) -> CGFloat {
-        let imageViewSize = cell.imageView.bounds.size
-       
-        return max(imageViewSize.width, imageViewSize.height) * scale
-    }
 }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,6 +41,7 @@
 		418BE7A426ADFAA000ED931E /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7A326ADFAA000ED931E /* ProductDetailViewModel.swift */; };
 		418BE7A626AEBAD000ED931E /* AsyncImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7A526AEBAD000ED931E /* AsyncImageProcessor.swift */; };
 		418BE7A826AEBB0D00ED931E /* ImageDownsamplingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7A726AEBB0D00ED931E /* ImageDownsamplingOperation.swift */; };
+		418BE7AA26AEC9A900ED931E /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7A926AEC9A900ED931E /* Util.swift */; };
 		41E0E1E126AA134F00EF06DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E026AA134F00EF06DA /* AppDelegate.swift */; };
 		41E0E1E526AA134F00EF06DA /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */; };
 		41E0E1EA26AA135200EF06DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E0E1E926AA135200EF06DA /* Assets.xcassets */; };
@@ -106,6 +107,7 @@
 		418BE7A326ADFAA000ED931E /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 		418BE7A526AEBAD000ED931E /* AsyncImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageProcessor.swift; sourceTree = "<group>"; };
 		418BE7A726AEBB0D00ED931E /* ImageDownsamplingOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownsamplingOperation.swift; sourceTree = "<group>"; };
+		418BE7A926AEC9A900ED931E /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		41E0E1DD26AA134F00EF06DA /* Harry Potter Ilke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harry Potter Ilke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E0E1E026AA134F00EF06DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
@@ -189,21 +191,21 @@
 		414B627626AC7D15003A7F36 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				414B627D26AC7E2C003A7F36 /* Utils */,
+				414B627D26AC7E2C003A7F36 /* Helpers */,
 				41E0E24C26AA199B00EF06DA /* ProductList */,
 				414B629D26AC9CC3003A7F36 /* ProductDetail */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		414B627D26AC7E2C003A7F36 /* Utils */ = {
+		414B627D26AC7E2C003A7F36 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				414B627E26AC7E51003A7F36 /* UIViewController+Child.swift */,
 				418BE7A526AEBAD000ED931E /* AsyncImageProcessor.swift */,
 				418BE7A726AEBB0D00ED931E /* ImageDownsamplingOperation.swift */,
 			);
-			path = Utils;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		414B628026AC7ECD003A7F36 /* UseCases */ = {
@@ -253,6 +255,7 @@
 				414B629B26AC8465003A7F36 /* Log.swift */,
 				414B62A426ADB28C003A7F36 /* DefaultsManagable.swift */,
 				414B62A626ADB329003A7F36 /* Serializable+Protocol.swift */,
+				418BE7A926AEC9A900ED931E /* Util.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -608,6 +611,7 @@
 				414B628826AC7F67003A7F36 /* ServicesProvider.swift in Sources */,
 				414B623926AAFF26003A7F36 /* UIFont+Extensions.swift in Sources */,
 				414B626A26AC7B7B003A7F36 /* FlowCoordinator.swift in Sources */,
+				418BE7AA26AEC9A900ED931E /* Util.swift in Sources */,
 				414B628426AC7F09003A7F36 /* ResourceFile.swift in Sources */,
 				414B627826AC7D41003A7F36 /* ProductListViewController+Extensions.swift in Sources */,
 				414B62A526ADB28C003A7F36 /* DefaultsManagable.swift in Sources */,
