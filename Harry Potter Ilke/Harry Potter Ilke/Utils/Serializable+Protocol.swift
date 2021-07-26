@@ -66,4 +66,3 @@ extension Serializable {
 }
 
 // extension Serializable where Self: AppModel {}
-

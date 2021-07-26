@@ -8,12 +8,12 @@
 import UIKit
 
 class ImageDownsamplingOperation: Operation {
-   
+
     // MARK: Properties
-    
+
     /// Operation identifier.
     let identifier: UUID
-    
+
     /// `URL` to localy stored image.
     let imageURL: URL
 
@@ -22,24 +22,24 @@ class ImageDownsamplingOperation: Operation {
 
     /// The `UIImage` that has been downsampled.
     private(set) var downsampledImage: UIImage?
-    
+
     // MARK: Initialization
-    
+
     init(identifier: UUID, imageURL: URL, maxDimentionInPixels: CGFloat) {
         self.identifier = identifier
         self.imageURL   = imageURL
         self.maxDimentionInPixels  = maxDimentionInPixels
     }
-    
+
     // MARK: Operation overrides
-    
+
     override func main() {
         guard !isCancelled else { return }
         downsampledImage = downsample(imageAt: imageURL, maxDimentionInPixels: maxDimentionInPixels)
     }
-    
+
     // MARK: Private
-    
+
     /// Performs downsampling image from the specified `URL` to `maxDimentionInPixels` size.
     ///
     /// - Parameters:
@@ -53,9 +53,9 @@ class ImageDownsamplingOperation: Operation {
                                   kCGImageSourceShouldCacheImmediately: true,
                                   kCGImageSourceCreateThumbnailWithTransform: true,
                                   kCGImageSourceThumbnailMaxPixelSize: maxDimentionInPixels] as CFDictionary
-        
+
         let downsampledImage = CGImageSourceCreateThumbnailAtIndex(imageSource, 0, downsampledOptions)!
-        
+
         return UIImage(cgImage: downsampledImage)
     }
 }

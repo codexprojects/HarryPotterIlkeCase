@@ -8,10 +8,9 @@
 import Foundation
 
 struct ResourceFile<T: Decodable> {
-    let fileName : String
-  
+    let fileName: String
+
     init(fileName: String) {
         self.fileName = fileName
     }
 }
-

@@ -26,8 +26,7 @@ extension DefaultsManageable where Self: Serializable {
         do {
             let decoder = JSONDecoder()
             self = try decoder.decode(Self.self, from: object)
-        }
-        catch(let error) {
+        } catch let error {
             dump(error)
             return
         }
@@ -38,12 +37,12 @@ extension DefaultsManageable where Self: Serializable {
     }
 }
 
-
 struct FavoritesProducts: Serializable, DefaultsManageable {// Composed
     var productListFavorites: [ProductList] = []
-    
+
     func checkProductIsFavorited(product: ProductList) -> Bool {
         if let index = self.productListFavorites.firstIndex(of: product) {
+            oslog.info(index)
             return  true
         } else {
             return false

@@ -19,7 +19,7 @@ import Combine
     required init?(coder: NSCoder) {
         fatalError("Not supported!")
     }
-    
+
     enum Section {
         case main
      }
@@ -28,19 +28,18 @@ import Combine
     var collectionView: UICollectionView! = nil
     var dataSource: UICollectionViewDiffableDataSource<Section, ProductList>! = nil
     var snapshot = NSDiffableDataSourceSnapshot<Section, ProductList>()
-    
+
     private var cancellables: [AnyCancellable] = []
- 
+
     private let selection = PassthroughSubject<ProductList, Never>()
     private let search = PassthroughSubject<Int, Never>()
     private let appear = PassthroughSubject<Void, Never>()
-    
+
     let imageProcessor = AsyncImageProcessor()
-    
-    
+
     // TODO: FIXTHIS -> Move to VM
     var currentPage: Int = 0
-    
+
     var paginantionEnabled = false {
         didSet {
             if paginantionEnabled {
@@ -48,24 +47,24 @@ import Combine
             }
         }
     }
-    
+
     func loadMore() {
         currentPage += 1
         search.send(currentPage)
     }
-    
-     override func viewDidLoad() {
-        super.viewDidLoad()
-        
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // To observe state of favorite product data bind moved to viewWillAppear from viewDidLoad.
         configureHierarchy()
         bind(to: viewModel)
         configureDataSource()
         search.send(currentPage)
-     }
+    }
  }
 
 extension ProductListViewController {
- 
+
     private func bind(to viewModel: ProductListViewModelType) {
         cancellables.forEach { $0.cancel() }
         cancellables.removeAll()
@@ -102,7 +101,7 @@ extension ProductListViewController {
 }
 
 fileprivate extension ProductListViewController {
-  
+
     func update(with products: [ProductList], animate: Bool = true) {
         DispatchQueue.main.async {
             self.snapshot.appendItems(products, toSection: .main)
@@ -115,8 +114,10 @@ fileprivate extension ProductListViewController {
 
 extension ProductListViewController {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let snapshot = dataSource.snapshot()
         selection.send(snapshot.itemIdentifiers[indexPath.row])
+        currentPage = 0
+        dataSource = nil
+        snapshot.deleteAllItems()
         collectionView.deselectItem(at: indexPath, animated: true)
     }
 }

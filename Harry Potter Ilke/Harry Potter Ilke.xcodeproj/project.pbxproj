@@ -42,6 +42,7 @@
 		418BE7A626AEBAD000ED931E /* AsyncImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7A526AEBAD000ED931E /* AsyncImageProcessor.swift */; };
 		418BE7A826AEBB0D00ED931E /* ImageDownsamplingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7A726AEBB0D00ED931E /* ImageDownsamplingOperation.swift */; };
 		418BE7AA26AEC9A900ED931E /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7A926AEC9A900ED931E /* Util.swift */; };
+		418BE7AD26AEFB4300ED931E /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 418BE7AC26AEFB4300ED931E /* .swiftlint.yml */; };
 		41E0E1E126AA134F00EF06DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E026AA134F00EF06DA /* AppDelegate.swift */; };
 		41E0E1E526AA134F00EF06DA /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */; };
 		41E0E1EA26AA135200EF06DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E0E1E926AA135200EF06DA /* Assets.xcassets */; };
@@ -108,6 +109,7 @@
 		418BE7A526AEBAD000ED931E /* AsyncImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageProcessor.swift; sourceTree = "<group>"; };
 		418BE7A726AEBB0D00ED931E /* ImageDownsamplingOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownsamplingOperation.swift; sourceTree = "<group>"; };
 		418BE7A926AEC9A900ED931E /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		418BE7AC26AEFB4300ED931E /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		41E0E1DD26AA134F00EF06DA /* Harry Potter Ilke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harry Potter Ilke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E0E1E026AA134F00EF06DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 				414B623726AAFF00003A7F36 /* Extensions */,
 				41E0E1EB26AA135200EF06DA /* LaunchScreen.storyboard */,
 				41E0E1EE26AA135200EF06DA /* Info.plist */,
+				418BE7AC26AEFB4300ED931E /* .swiftlint.yml */,
 			);
 			path = "Harry Potter Ilke";
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				41E0E1D926AA134F00EF06DA /* Sources */,
 				41E0E1DA26AA134F00EF06DA /* Frameworks */,
 				41E0E1DB26AA134F00EF06DA /* Resources */,
+				418BE7AB26AEF3DC00ED931E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -496,6 +500,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418BE7AD26AEFB4300ED931E /* .swiftlint.yml in Resources */,
 				41E0E25126AA1ADB00EF06DA /* products.json in Resources */,
 				41E0E1ED26AA135200EF06DA /* LaunchScreen.storyboard in Resources */,
 				41E0E1EA26AA135200EF06DA /* Assets.xcassets in Resources */,
@@ -540,6 +545,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		418BE7AB26AEF3DC00ED931E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		66DB535E1724DD36E2684679 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

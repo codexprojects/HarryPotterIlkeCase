@@ -8,11 +8,9 @@
 import Foundation
 import Combine
 
-
 extension ResourceFile {
     static func products(fileName: String) -> ResourceFile<[ProductList]> {
-        
+
         return ResourceFile<[ProductList]>(fileName: fileName)
     }
 }
-

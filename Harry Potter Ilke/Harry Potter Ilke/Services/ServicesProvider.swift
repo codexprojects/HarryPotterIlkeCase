@@ -9,7 +9,7 @@ import Foundation
 
 class ServicesProvider {
     let network: NetworkServiceType
-   
+
     static func defaultProvider() -> ServicesProvider {
         let network = NetworkService()
         return ServicesProvider(network: network)
@@ -18,5 +18,5 @@ class ServicesProvider {
     init(network: NetworkServiceType) {
         self.network = network
     }
-   
+
 }

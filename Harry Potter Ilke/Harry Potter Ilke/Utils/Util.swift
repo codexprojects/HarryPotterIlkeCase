@@ -19,8 +19,7 @@ public func readFile(forName name: String) -> Data? {
     return nil
 }
 
-
-public func slicePaginationArray(productList: Array<ProductList>, page: Int) -> Array<ProductList> {
+public func slicePaginationArray(productList: [ProductList], page: Int) -> [ProductList] {
     if productList.isEmpty { return [] }
     let perPage = 20
     if (productList.count / perPage) <= page { return [] }
@@ -28,8 +27,7 @@ public func slicePaginationArray(productList: Array<ProductList>, page: Int) -> 
     return Array(productList[range])
 }
 
-
-//MARK: Image helper
+// MARK: Image helper
 public func getMaxDimentionInPixelsFrom(_ imageView: UIImageView, scale: CGFloat) -> CGFloat {
 
     let imageViewSize = imageView.bounds.size

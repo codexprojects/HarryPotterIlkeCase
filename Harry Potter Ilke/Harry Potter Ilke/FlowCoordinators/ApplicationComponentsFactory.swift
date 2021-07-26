@@ -19,7 +19,7 @@ final class ApplicationComponentsFactory {
 }
 
 extension ApplicationComponentsFactory: ApplicationFlowCoordinatorDependencyProvider {
-   
+
     func productListNavigationController(navigator: ProductListNavigator) -> UINavigationController {
         let viewModel = ProductListViewModel(useCase: useCase, navigator: navigator)
         let productListViewController = ProductListViewController(viewModel: viewModel)
@@ -33,4 +33,3 @@ extension ApplicationComponentsFactory: ApplicationFlowCoordinatorDependencyProv
         return ProductDetailViewControlller(viewModel: viewModel)
     }
 }
-

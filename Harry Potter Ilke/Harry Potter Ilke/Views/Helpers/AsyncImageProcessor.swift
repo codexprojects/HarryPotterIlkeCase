@@ -11,24 +11,24 @@ class AsyncImageProcessor {
 
     /// A serial `OperationQueue` to lock access to the `imageProcessingQueue` and `completionHandlers` properties.
     private let serialAccessQueue = OperationQueue()
-    
+
     /// An `OperationQueue` that contains `ImageDownsamplingOperation`s for processing image data.
     private let imageProcessingQueue = OperationQueue()
-    
+
     /// A dictionary of arrays of closures
     private var completionHandlers = [UUID: [(UIImage?) -> Void]]()
-    
+
     /// An `NSCache` used to store downsampled images.
     private var cache = NSCache<NSUUID, UIImage>()
-    
+
     // MARK: Initialization
-    
+
     init() {
         serialAccessQueue.maxConcurrentOperationCount = 1
     }
-    
+
     // MARK: Image processing
-    
+
     ///  Asynchronously downsample image from specific `URL` to `maxDimentionInPixels` size.
     ///
     /// - Parameters:
@@ -42,11 +42,11 @@ class AsyncImageProcessor {
                 let handlers = self.completionHandlers[identifier, default: []]
                 self.completionHandlers[identifier] = handlers + [completion]
             }
-            
+
             self.downsampleImage(for: identifier, imageURL: imageURL, maxDimentionInPixels: maxDimentionInPixels)
         }
     }
-    
+
     /// Begin downsample operation for image by specific `URL`, invoke completion handler when operation is finished
     ///
     /// - Parameters:
@@ -55,27 +55,27 @@ class AsyncImageProcessor {
     ///   - maxDimentionInPixels: The maximum width and height in pixels of a thumbnail.
     private func downsampleImage(for identifier: UUID, imageURL: URL, maxDimentionInPixels: CGFloat) {
         guard operation(for: identifier) == nil else { return }
-        
+
         if let data = downsampledImage(for: identifier) {
             invokeCompletionHandlers(for: identifier, with: data)
             return
         }
-        
+
         let downsampleOperation = ImageDownsamplingOperation(identifier: identifier, imageURL: imageURL,
                                                              maxDimentionInPixels: maxDimentionInPixels)
-        
+
         downsampleOperation.completionBlock = { [weak downsampleOperation] in
             guard let downsampledImage = downsampleOperation?.downsampledImage else { return }
             self.cache.setObject(downsampledImage, forKey: identifier as NSUUID)
-            
+
             self.serialAccessQueue.addOperation {
                 self.invokeCompletionHandlers(for: identifier, with: downsampledImage)
             }
         }
-        
+
         imageProcessingQueue.addOperation(downsampleOperation)
     }
-    
+
     /// Returns the previously downsampled `UIImage` by specified `UUID`.
     ///
     /// - Parameter identifier: The `UUID` for downsampled image
@@ -83,7 +83,7 @@ class AsyncImageProcessor {
     func downsampledImage(for identifier: UUID) -> UIImage? {
         return cache.object(forKey: identifier as NSUUID)
     }
-    
+
     // MARK: Manage enqueued operations.
 
     /// Cancel enqueued downsampling operation by `identifier`.
@@ -95,11 +95,11 @@ class AsyncImageProcessor {
 
             self.operation(for: identifier)?.cancel()
             self.completionHandlers[identifier] = nil
-            
+
             self.imageProcessingQueue.isSuspended = false
         }
     }
-    
+
     /// Returns equeued `ImageDownsamplingOperation` for specified `identifier`.
     ///
     /// - Parameter identifier: The `UUID` of the operation to return.
@@ -109,12 +109,12 @@ class AsyncImageProcessor {
             where !fetchOperation.isCancelled && fetchOperation.identifier == identifier {
                 return fetchOperation
         }
-        
+
         return nil
     }
-    
+
     // MARK: Completion
-    
+
     /// Invokes completion handlers by specified `UUID`.
     ///
     /// - Parameters:
@@ -123,10 +123,9 @@ class AsyncImageProcessor {
     private func invokeCompletionHandlers(for identifier: UUID, with downsampledImage: UIImage) {
         let completionHandlers = self.completionHandlers[identifier, default: []]
         self.completionHandlers[identifier] = nil
-        
+
         for completionHandler in completionHandlers {
             completionHandler(downsampledImage)
         }
     }
 }
-

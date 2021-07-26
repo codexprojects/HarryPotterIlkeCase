@@ -8,7 +8,7 @@
 import XCTest
 @testable import Harry_Potter_Ilke
 
-class Harry_Potter_IlkeTests: XCTestCase {
+class HarryPotterIlkeTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

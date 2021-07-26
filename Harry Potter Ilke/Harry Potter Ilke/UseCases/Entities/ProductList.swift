@@ -11,12 +11,12 @@ import Combine
 public struct ProductList: Codable {
     var uuid = UUID()
 
-    private enum CodingKeys : String, CodingKey { case title, author, imageURL }
-    
+    private enum CodingKeys: String, CodingKey { case title, author, imageURL }
+
     var title: String?
     var author: String?
     var imageURL: String?
-    
+
     init(title: String? = nil,
          author: String? = nil,
          imageURL: String? = nil) {
@@ -26,14 +26,13 @@ public struct ProductList: Codable {
     }
 }
 
-
 // MARK: - Equatable
 extension ProductList: Equatable {}
 
 // MARK: - Hashable
-extension ProductList : Hashable {
+extension ProductList: Hashable {
     public static func == (lhs: ProductList, rhs: ProductList) -> Bool {
-   
+
         return lhs.title  == rhs.title &&
             lhs.author == rhs.author &&
             lhs.imageURL == rhs.imageURL

@@ -16,6 +16,5 @@ protocol ProductListFlowCoordinatorDependencyProvider: AnyObject {
 
     // Creates UIViewController to show the details of the movie with specified identifier
     func productDetailsController(_ product: ProductList) -> UIViewController
-   
-}
 
+}

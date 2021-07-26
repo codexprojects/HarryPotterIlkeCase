@@ -22,7 +22,7 @@ extension ProductListViewController {
 
         let section = NSCollectionLayoutSection(group: group)
         let layout = UICollectionViewCompositionalLayout(section: section)
-        
+
         return layout
     }
 }
@@ -39,22 +39,22 @@ extension ProductListViewController {
      }
 
     func configureDataSource() {
-        let cellRegistration = UICollectionView.CellRegistration<ProductCell, ProductList> { [self] (cell, indexPath, identifier) in
+        let cellRegistration = UICollectionView.CellRegistration<ProductCell, ProductList> { [self] (cell, _, identifier) in
          // Populate the cell with our item description.
             cell.productItem = identifier
-            
+
             // Image processing
             let maxDimentionInPixels = getMaxDimentionInPixelsFrom(cell.imageView, scale: collectionView.traitCollection.displayScale)
             cell.representedId = identifier.uuid
-            
+
             if let downsampledImage = imageProcessor.downsampledImage(for: identifier.uuid) {
                 cell.update(with: downsampledImage)
             }
-            
+
             cell.update(with: nil)
-            
-            guard let imageURL = identifier.imageURL, let urlInstance = URL(string:imageURL.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)!) else { return }
-            
+
+            guard let imageURL = identifier.imageURL, let urlInstance = URL(string: imageURL.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!) else { return }
+
             imageProcessor.downsampleAsync(identifier.uuid, imageURL: urlInstance, maxDimentionInPixels: maxDimentionInPixels) { image in
                 DispatchQueue.main.async {
                     guard cell.representedId == identifier.uuid else { return }

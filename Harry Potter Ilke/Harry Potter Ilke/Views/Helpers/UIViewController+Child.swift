@@ -16,7 +16,7 @@ extension UIViewController {
             child.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             child.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             child.view.topAnchor.constraint(equalTo: view.topAnchor),
-            child.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            child.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
         child.didMove(toParent: self)
     }
@@ -31,4 +31,3 @@ extension UIViewController {
         child.removeFromParent()
     }
 }
-

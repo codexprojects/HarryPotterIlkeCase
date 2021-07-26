@@ -14,7 +14,7 @@ struct Log {
     func success<T>(_ object: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
         log("🟢", object, file, function, line, .info)
     }
-    
+
     func info<T>(_ object: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
         log("🟠", object, file, function, line, .info)
     }
@@ -22,7 +22,7 @@ struct Log {
     func error<T>(_ object: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
         log("🔴", object, file, function, line, .error)
     }
-    
+
     private func log<T>(_ prefix: String, _ object: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line, _ logType: OSLogType) {
         #if DEBUG || QA || TESTING
         let fileName = (file as NSString).lastPathComponent
@@ -30,7 +30,7 @@ struct Log {
         os_log(logType, "%@", infoString)
         #endif
     }
-    
+
     func serviceInfo<T>(_ object: T, spaceBefore: Bool = false, spaceAfter: Bool = false) {
         #if DEBUG || QA || TESTING
         var log = ""
@@ -41,4 +41,3 @@ struct Log {
         #endif
     }
 }
-

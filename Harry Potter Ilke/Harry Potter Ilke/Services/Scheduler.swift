@@ -20,4 +20,3 @@ final class Scheduler {
     static let mainScheduler = RunLoop.main
 
 }
-

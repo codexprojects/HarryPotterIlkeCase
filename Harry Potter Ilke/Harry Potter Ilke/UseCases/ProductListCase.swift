@@ -20,9 +20,9 @@ final class ProductListUseCase: ProductListUseCaseType {
 
     init(networkService: NetworkServiceType) {
         self.networkService = networkService
-    
+
     }
-    
+
     func getProducts(paginationValue: Int) -> AnyPublisher<Result<[ProductList], Error>, Never> {
         oslog.info(paginationValue)
         return networkService

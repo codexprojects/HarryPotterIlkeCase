@@ -15,7 +15,7 @@ final class NetworkService: NetworkServiceType {
         self.session = session
     }
 
-    //MARK: Read data from local json file.
+    // MARK: Read data from local json file.
     @discardableResult
     func loadFromFile<T>(_ resource: ResourceFile<T>) -> AnyPublisher<T, Error> {
         let decoder = JSONDecoder()
@@ -27,4 +27,3 @@ final class NetworkService: NetworkServiceType {
     }
 
 }
-

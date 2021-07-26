@@ -42,5 +42,3 @@ typealias ProductListViewModelOuput = AnyPublisher<ProductListState, Never>
 protocol ProductListViewModelType {
     func transform(input: ProductListViewModelInput) -> ProductListViewModelOuput
 }
-
-

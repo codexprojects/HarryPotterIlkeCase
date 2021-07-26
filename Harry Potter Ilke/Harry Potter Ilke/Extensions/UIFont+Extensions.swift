@@ -9,17 +9,16 @@ import UIKit
 
 extension UIFont {
 
-    class func AvenirNextRegular(size: CGFloat) -> UIFont {
-        return font(.AvenirNextRegular, size: size)
+    class func avenirNextRegular(size: CGFloat) -> UIFont {
+        return font(.avenirNextRegular, size: size)
     }
-    
-    class func AvenirNextSemiBold(size: CGFloat) -> UIFont {
-        return font(.AvenirNextSemiBold, size: size)
+
+    class func avenirNextSemiBold(size: CGFloat) -> UIFont {
+        return font(.avenirNextSemiBold, size: size)
     }
 
     private class func font(_ font: AppFonts, size: CGFloat) -> UIFont {
         UIFont(name: font.rawValue, size: size)!
     }
-    
-}
 
+}
