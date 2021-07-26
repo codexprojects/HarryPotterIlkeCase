@@ -38,7 +38,7 @@ import Combine
     let imageProcessor = AsyncImageProcessor()
     
     
-    // TODO: FIXTHIS -> Mus be moved to VM
+    // TODO: FIXTHIS -> Move to VM
     var currentPage: Int = 0
     
     var paginantionEnabled = false {
