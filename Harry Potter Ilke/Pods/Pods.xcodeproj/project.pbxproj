@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0ED5A610E29C796A1EABCEC96AD17506 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1B6A56CAFAA641FD5FC4CB682884EC42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		405E081CAFB9C76E4D59ACEBB70E256C /* Pods-Harry Potter IlkeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 392437F8107114470A76D8A364AC085B /* Pods-Harry Potter IlkeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C1FAA540DD43DF242B3BD18BAE7052D /* Pods-Harry Potter Ilke-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC3808082A47F18C25E709CD9BCB4B83 /* Pods-Harry Potter Ilke-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		674AB9C75BEB224F5D38EF68829DAFDF /* Pods-Harry Potter IlkeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A03D413C021CDB37C2FF2871BDD535 /* Pods-Harry Potter IlkeTests-dummy.m */; };
+		7B709BEA9F17ADE8E97329880F230774 /* Pods-Harry Potter Ilke-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B1A42D22784C3778B1D163F43BF9B0 /* Pods-Harry Potter Ilke-dummy.m */; };
+		808F1AB545A96982987FEB0613E360AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8E08EC19770784F4B6197EDCFC84ECD8 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F8BCA286F6369B06BD25DBDE1F4BB0D /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E2ED5A734FBC06DBECD6A0BCF3640A2 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 615308FA61B22FA06BA3065ACD78D0F6 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CAC28C3A6656096FFEBA1EEC17F2836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		31155B1D73A38CFC15996C5284831CAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B5FD17B7019DB453F9504F2C97D5112;
+			remoteInfo = "Pods-Harry Potter Ilke";
+		};
+		6BA5C33855AF80CBF4ACF33576E6C33F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10D42131EF8595577E0091E5D46102AF /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Harry Potter Ilke-Harry Potter IlkeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1A2AE1C20F5074F9AB92904E5E629567 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harry Potter Ilke-Harry Potter IlkeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		392437F8107114470A76D8A364AC085B /* Pods-Harry Potter IlkeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Harry Potter IlkeTests-umbrella.h"; sourceTree = "<group>"; };
+		3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		419F0324EE3691C711FF2AE23D7C4E8C /* Pods-Harry Potter IlkeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harry Potter IlkeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D78C4B6CDA0A6DA4E9BC26F6A3D68B1 /* Pods-Harry Potter IlkeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Harry Potter IlkeTests.modulemap"; sourceTree = "<group>"; };
+		51DAC83F4F01FD52130AE860A4EF9DDC /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Harry Potter Ilke-Harry Potter IlkeUITests-Info.plist"; sourceTree = "<group>"; };
+		5697F1DFE7620C8D647555F6852403D4 /* Pods-Harry Potter Ilke-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Harry Potter Ilke-acknowledgements.markdown"; sourceTree = "<group>"; };
+		615308FA61B22FA06BA3065ACD78D0F6 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Harry Potter Ilke-Harry Potter IlkeUITests-dummy.m"; sourceTree = "<group>"; };
+		6951ECA76FFD9102617A68CC2C192603 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Harry Potter Ilke-Harry Potter IlkeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6DEC2E37D23B7BB13D4D69E393998E76 /* Pods-Harry Potter IlkeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harry Potter IlkeTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E5D5B2DA4822326C208A68D3F40E183 /* Pods-Harry Potter IlkeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Harry Potter IlkeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		75A74719CFE511AF2B74BA6C2C33656B /* Pods-Harry Potter IlkeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Harry Potter IlkeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
+		7EE746C8257CA8585DE19C6C3DA8B04C /* Pods-Harry Potter Ilke */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Harry Potter Ilke"; path = Pods_Harry_Potter_Ilke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82B1A42D22784C3778B1D163F43BF9B0 /* Pods-Harry Potter Ilke-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Harry Potter Ilke-dummy.m"; sourceTree = "<group>"; };
+		8DF779DBAA197D6D5E4A9E3775A35000 /* Pods-Harry Potter IlkeTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Harry Potter IlkeTests"; path = Pods_Harry_Potter_IlkeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B150B743290A181FC246317B62FD76 /* Pods-Harry Potter Ilke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harry Potter Ilke.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F8BCA286F6369B06BD25DBDE1F4BB0D /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Harry Potter Ilke-Harry Potter IlkeUITests-umbrella.h"; sourceTree = "<group>"; };
+		A53F8D46E52AB9ABA08523D1AA680F85 /* Pods-Harry Potter Ilke.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Harry Potter Ilke.modulemap"; sourceTree = "<group>"; };
+		B4BCADBEBE704A1FD7F523940099FCDF /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Harry Potter Ilke-Harry Potter IlkeUITests"; path = Pods_Harry_Potter_Ilke_Harry_Potter_IlkeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C41043C29A3E734A602AEAD33E6A2B68 /* Pods-Harry Potter Ilke-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Harry Potter Ilke-acknowledgements.plist"; sourceTree = "<group>"; };
+		CC3808082A47F18C25E709CD9BCB4B83 /* Pods-Harry Potter Ilke-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Harry Potter Ilke-umbrella.h"; sourceTree = "<group>"; };
+		CD6DD59EF17729D1C3D0078F4DBA4287 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harry Potter Ilke-Harry Potter IlkeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D3F55B322ADED10C2C6143C6EEB263B5 /* Pods-Harry Potter Ilke-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Harry Potter Ilke-Info.plist"; sourceTree = "<group>"; };
+		D44F40FA68B6508A588FFF4DF4E15424 /* Pods-Harry Potter IlkeTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Harry Potter IlkeTests-Info.plist"; sourceTree = "<group>"; };
+		D9884D9B6211C77BCFBE31C97BF0634D /* Pods-Harry Potter Ilke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harry Potter Ilke.release.xcconfig"; sourceTree = "<group>"; };
+		E9A82F4BA6E779D5DE83B2EB419A012D /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Harry Potter Ilke-Harry Potter IlkeUITests.modulemap"; sourceTree = "<group>"; };
+		F6A03D413C021CDB37C2FF2871BDD535 /* Pods-Harry Potter IlkeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Harry Potter IlkeTests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1962AEE7B17C171A5A03C00BDDDB4BE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808F1AB545A96982987FEB0613E360AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DEAFD1D0C489FA2C982414E7FF75A2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED5A610E29C796A1EABCEC96AD17506 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEAF2B45B0AF43532D9F330CD81623B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6A56CAFAA641FD5FC4CB682884EC42 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B56098ED802EDC5E5A4784DC3DC78EB /* Pods-Harry Potter Ilke */ = {
+			isa = PBXGroup;
+			children = (
+				A53F8D46E52AB9ABA08523D1AA680F85 /* Pods-Harry Potter Ilke.modulemap */,
+				5697F1DFE7620C8D647555F6852403D4 /* Pods-Harry Potter Ilke-acknowledgements.markdown */,
+				C41043C29A3E734A602AEAD33E6A2B68 /* Pods-Harry Potter Ilke-acknowledgements.plist */,
+				82B1A42D22784C3778B1D163F43BF9B0 /* Pods-Harry Potter Ilke-dummy.m */,
+				D3F55B322ADED10C2C6143C6EEB263B5 /* Pods-Harry Potter Ilke-Info.plist */,
+				CC3808082A47F18C25E709CD9BCB4B83 /* Pods-Harry Potter Ilke-umbrella.h */,
+				93B150B743290A181FC246317B62FD76 /* Pods-Harry Potter Ilke.debug.xcconfig */,
+				D9884D9B6211C77BCFBE31C97BF0634D /* Pods-Harry Potter Ilke.release.xcconfig */,
+			);
+			name = "Pods-Harry Potter Ilke";
+			path = "Target Support Files/Pods-Harry Potter Ilke";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */,
+				7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		965877409E01FB3D85D85E90E6B30185 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D96179D43A67C5D5323B0682D32C133C /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA22ED6F2B8E1A735408D586288DBE39 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B56098ED802EDC5E5A4784DC3DC78EB /* Pods-Harry Potter Ilke */,
+				D96948A6CD98F305CB9B3ACC4C66A768 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests */,
+				D3BC3AC328ADC51BA01B625FFC55ED8F /* Pods-Harry Potter IlkeTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				965877409E01FB3D85D85E90E6B30185 /* Pods */,
+				E2B5DBE06E7D9907D932E8F818B3DC97 /* Products */,
+				AA22ED6F2B8E1A735408D586288DBE39 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3BC3AC328ADC51BA01B625FFC55ED8F /* Pods-Harry Potter IlkeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D78C4B6CDA0A6DA4E9BC26F6A3D68B1 /* Pods-Harry Potter IlkeTests.modulemap */,
+				6E5D5B2DA4822326C208A68D3F40E183 /* Pods-Harry Potter IlkeTests-acknowledgements.markdown */,
+				75A74719CFE511AF2B74BA6C2C33656B /* Pods-Harry Potter IlkeTests-acknowledgements.plist */,
+				F6A03D413C021CDB37C2FF2871BDD535 /* Pods-Harry Potter IlkeTests-dummy.m */,
+				D44F40FA68B6508A588FFF4DF4E15424 /* Pods-Harry Potter IlkeTests-Info.plist */,
+				392437F8107114470A76D8A364AC085B /* Pods-Harry Potter IlkeTests-umbrella.h */,
+				419F0324EE3691C711FF2AE23D7C4E8C /* Pods-Harry Potter IlkeTests.debug.xcconfig */,
+				6DEC2E37D23B7BB13D4D69E393998E76 /* Pods-Harry Potter IlkeTests.release.xcconfig */,
+			);
+			name = "Pods-Harry Potter IlkeTests";
+			path = "Target Support Files/Pods-Harry Potter IlkeTests";
+			sourceTree = "<group>";
+		};
+		D96179D43A67C5D5323B0682D32C133C /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */,
+			);
+			name = SwiftLint;
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		D96948A6CD98F305CB9B3ACC4C66A768 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9A82F4BA6E779D5DE83B2EB419A012D /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests.modulemap */,
+				6951ECA76FFD9102617A68CC2C192603 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests-acknowledgements.markdown */,
+				10D42131EF8595577E0091E5D46102AF /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests-acknowledgements.plist */,
+				615308FA61B22FA06BA3065ACD78D0F6 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests-dummy.m */,
+				51DAC83F4F01FD52130AE860A4EF9DDC /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests-Info.plist */,
+				9F8BCA286F6369B06BD25DBDE1F4BB0D /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests-umbrella.h */,
+				1A2AE1C20F5074F9AB92904E5E629567 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests.debug.xcconfig */,
+				CD6DD59EF17729D1C3D0078F4DBA4287 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests.release.xcconfig */,
+			);
+			name = "Pods-Harry Potter Ilke-Harry Potter IlkeUITests";
+			path = "Target Support Files/Pods-Harry Potter Ilke-Harry Potter IlkeUITests";
+			sourceTree = "<group>";
+		};
+		E2B5DBE06E7D9907D932E8F818B3DC97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EE746C8257CA8585DE19C6C3DA8B04C /* Pods-Harry Potter Ilke */,
+				B4BCADBEBE704A1FD7F523940099FCDF /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests */,
+				8DF779DBAA197D6D5E4A9E3775A35000 /* Pods-Harry Potter IlkeTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09CA10F41E41FF103E5569244E97BD0C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E08EC19770784F4B6197EDCFC84ECD8 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12744C2C9A964C8E7A8B3B85CBD2883E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C1FAA540DD43DF242B3BD18BAE7052D /* Pods-Harry Potter Ilke-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB4279D1E65D0CB8D978E2D4C3D945E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				405E081CAFB9C76E4D59ACEBB70E256C /* Pods-Harry Potter IlkeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F02FCE3242B8C5D15AC64C6221E54DD /* Pods-Harry Potter IlkeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91BACCC41FD2586876DC7C093C4318F2 /* Build configuration list for PBXNativeTarget "Pods-Harry Potter IlkeTests" */;
+			buildPhases = (
+				DFB4279D1E65D0CB8D978E2D4C3D945E /* Headers */,
+				0A9A51545376A3E221018A6EB1A8D444 /* Sources */,
+				CBEAF2B45B0AF43532D9F330CD81623B /* Frameworks */,
+				2EBA8B1C386D7D3F62CDE6E481D78EC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06BCE8D3C529133E0E7186F98DE16464 /* PBXTargetDependency */,
+			);
+			name = "Pods-Harry Potter IlkeTests";
+			productName = Pods_Harry_Potter_IlkeTests;
+			productReference = 8DF779DBAA197D6D5E4A9E3775A35000 /* Pods-Harry Potter IlkeTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		27F661F335AB131012AC9D4A4BFA740C /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D0BFEE5C1D94F24B3914CE93E429C1 /* Build configuration list for PBXNativeTarget "Pods-Harry Potter Ilke-Harry Potter IlkeUITests" */;
+			buildPhases = (
+				09CA10F41E41FF103E5569244E97BD0C /* Headers */,
+				F8FFFDB76B41038A2AFB3945BE421684 /* Sources */,
+				1962AEE7B17C171A5A03C00BDDDB4BE5 /* Frameworks */,
+				8DBC64ADA272B338A7FFE2446D8AC8EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C83CDE205085C898DBA26D50DD698264 /* PBXTargetDependency */,
+			);
+			name = "Pods-Harry Potter Ilke-Harry Potter IlkeUITests";
+			productName = Pods_Harry_Potter_Ilke_Harry_Potter_IlkeUITests;
+			productReference = B4BCADBEBE704A1FD7F523940099FCDF /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		4B5FD17B7019DB453F9504F2C97D5112 /* Pods-Harry Potter Ilke */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1E3B673C7B704CCD541CEB9ABBC2AED /* Build configuration list for PBXNativeTarget "Pods-Harry Potter Ilke" */;
+			buildPhases = (
+				12744C2C9A964C8E7A8B3B85CBD2883E /* Headers */,
+				976B0A8F3FCCDE95AC4F55DD1D98031B /* Sources */,
+				1DEAFD1D0C489FA2C982414E7FF75A2F /* Frameworks */,
+				03C936A34DC87974E4983C99E616F2C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A738F2B3D5783C40DC25FEC25EEB1CE2 /* PBXTargetDependency */,
+			);
+			name = "Pods-Harry Potter Ilke";
+			productName = Pods_Harry_Potter_Ilke;
+			productReference = 7EE746C8257CA8585DE19C6C3DA8B04C /* Pods-Harry Potter Ilke */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E2B5DBE06E7D9907D932E8F818B3DC97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B5FD17B7019DB453F9504F2C97D5112 /* Pods-Harry Potter Ilke */,
+				27F661F335AB131012AC9D4A4BFA740C /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests */,
+				0F02FCE3242B8C5D15AC64C6221E54DD /* Pods-Harry Potter IlkeTests */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03C936A34DC87974E4983C99E616F2C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EBA8B1C386D7D3F62CDE6E481D78EC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DBC64ADA272B338A7FFE2446D8AC8EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A9A51545376A3E221018A6EB1A8D444 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674AB9C75BEB224F5D38EF68829DAFDF /* Pods-Harry Potter IlkeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		976B0A8F3FCCDE95AC4F55DD1D98031B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B709BEA9F17ADE8E97329880F230774 /* Pods-Harry Potter Ilke-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8FFFDB76B41038A2AFB3945BE421684 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E2ED5A734FBC06DBECD6A0BCF3640A2 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06BCE8D3C529133E0E7186F98DE16464 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Harry Potter Ilke";
+			target = 4B5FD17B7019DB453F9504F2C97D5112 /* Pods-Harry Potter Ilke */;
+			targetProxy = 31155B1D73A38CFC15996C5284831CAD /* PBXContainerItemProxy */;
+		};
+		A738F2B3D5783C40DC25FEC25EEB1CE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 1CAC28C3A6656096FFEBA1EEC17F2836 /* PBXContainerItemProxy */;
+		};
+		C83CDE205085C898DBA26D50DD698264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 6BA5C33855AF80CBF4ACF33576E6C33F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0021E6CA3CAE674988A1AA2F93A4D855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 419F0324EE3691C711FF2AE23D7C4E8C /* Pods-Harry Potter IlkeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Harry Potter IlkeTests/Pods-Harry Potter IlkeTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Harry Potter IlkeTests/Pods-Harry Potter IlkeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		01657F87B89566580C74BBC6DA245930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9884D9B6211C77BCFBE31C97BF0634D /* Pods-Harry Potter Ilke.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Harry Potter Ilke/Pods-Harry Potter Ilke-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Harry Potter Ilke/Pods-Harry Potter Ilke.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0C358D9C1041928F40B68F0F6DBC42D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD6DD59EF17729D1C3D0078F4DBA4287 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Harry Potter Ilke-Harry Potter IlkeUITests/Pods-Harry Potter Ilke-Harry Potter IlkeUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Harry Potter Ilke-Harry Potter IlkeUITests/Pods-Harry Potter Ilke-Harry Potter IlkeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		24D7EE9CACFD9288B432EABCB4344DFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93B150B743290A181FC246317B62FD76 /* Pods-Harry Potter Ilke.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Harry Potter Ilke/Pods-Harry Potter Ilke-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Harry Potter Ilke/Pods-Harry Potter Ilke.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7CD3E9DCA8BCAF198311A1B7CF7BE65F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A2AE1C20F5074F9AB92904E5E629567 /* Pods-Harry Potter Ilke-Harry Potter IlkeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Harry Potter Ilke-Harry Potter IlkeUITests/Pods-Harry Potter Ilke-Harry Potter IlkeUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Harry Potter Ilke-Harry Potter IlkeUITests/Pods-Harry Potter Ilke-Harry Potter IlkeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7CDC7EAB11B485FB9D5EC4A4F436F874 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DEC2E37D23B7BB13D4D69E393998E76 /* Pods-Harry Potter IlkeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Harry Potter IlkeTests/Pods-Harry Potter IlkeTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Harry Potter IlkeTests/Pods-Harry Potter IlkeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AD81E62ACCB0B7A923FC8AA288F9921E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04D0BFEE5C1D94F24B3914CE93E429C1 /* Build configuration list for PBXNativeTarget "Pods-Harry Potter Ilke-Harry Potter IlkeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CD3E9DCA8BCAF198311A1B7CF7BE65F /* Debug */,
+				0C358D9C1041928F40B68F0F6DBC42D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */,
+				C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91BACCC41FD2586876DC7C093C4318F2 /* Build configuration list for PBXNativeTarget "Pods-Harry Potter IlkeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0021E6CA3CAE674988A1AA2F93A4D855 /* Debug */,
+				7CDC7EAB11B485FB9D5EC4A4F436F874 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */,
+				AD81E62ACCB0B7A923FC8AA288F9921E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1E3B673C7B704CCD541CEB9ABBC2AED /* Build configuration list for PBXNativeTarget "Pods-Harry Potter Ilke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D7EE9CACFD9288B432EABCB4344DFB /* Debug */,
+				01657F87B89566580C74BBC6DA245930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

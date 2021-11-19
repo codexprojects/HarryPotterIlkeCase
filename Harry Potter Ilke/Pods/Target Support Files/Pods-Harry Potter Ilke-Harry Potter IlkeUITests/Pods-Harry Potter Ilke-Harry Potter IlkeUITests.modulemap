@@ -1,0 +1,6 @@
+framework module Pods_Harry_Potter_Ilke_Harry_Potter_IlkeUITests {
+  umbrella header "Pods-Harry Potter Ilke-Harry Potter IlkeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

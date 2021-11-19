@@ -36,8 +36,6 @@ import Combine
     private let appear = PassthroughSubject<Void, Never>()
 
     let imageProcessor = AsyncImageProcessor()
-
-    // TODO: FIXTHIS -> Move to VM
     var currentPage: Int = 0
 
     var paginantionEnabled = false {
@@ -55,16 +53,13 @@ import Combine
     override func viewDidLoad() {
         super.viewDidLoad()
         view.accessibilityIdentifier = AccessibilityIdentifiers.ProductList.rootViewId
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        // To observe state of favorite product data, funcs moved to viewWillAppear from viewDidLoad.
+        
         configureHierarchy()
         bind(to: viewModel)
         configureDataSource()
         search.send(currentPage)
     }
+
  }
 
 extension ProductListViewController {
@@ -119,9 +114,6 @@ fileprivate extension ProductListViewController {
 extension ProductListViewController {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selection.send(snapshot.itemIdentifiers[indexPath.row])
-        currentPage = 0
-        dataSource = nil
-        snapshot.deleteAllItems()
         collectionView.deselectItem(at: indexPath, animated: true)
     }
 }
