@@ -45,6 +45,7 @@
 		418BE7AD26AEFB4300ED931E /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 418BE7AC26AEFB4300ED931E /* .swiftlint.yml */; };
 		418BE7AF26AF0C9C00ED931E /* ApplicationFlowCoordinatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7AE26AF0C9C00ED931E /* ApplicationFlowCoordinatorTest.swift */; };
 		418BE7B126AF107E00ED931E /* ProductListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BE7B026AF107E00ED931E /* ProductListUseCaseTests.swift */; };
+		41B018B0274A5941005835AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B018AF274A5941005835AC /* SceneDelegate.swift */; };
 		41E0E1E126AA134F00EF06DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E026AA134F00EF06DA /* AppDelegate.swift */; };
 		41E0E1E526AA134F00EF06DA /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */; };
 		41E0E1EA26AA135200EF06DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E0E1E926AA135200EF06DA /* Assets.xcassets */; };
@@ -114,6 +115,7 @@
 		418BE7AC26AEFB4300ED931E /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		418BE7AE26AF0C9C00ED931E /* ApplicationFlowCoordinatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlowCoordinatorTest.swift; sourceTree = "<group>"; };
 		418BE7B026AF107E00ED931E /* ProductListUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListUseCaseTests.swift; sourceTree = "<group>"; };
+		41B018AF274A5941005835AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		41E0E1DD26AA134F00EF06DA /* Harry Potter Ilke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harry Potter Ilke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E0E1E026AA134F00EF06DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41E0E1E426AA134F00EF06DA /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				41E0E1E026AA134F00EF06DA /* AppDelegate.swift */,
+				41B018AF274A5941005835AC /* SceneDelegate.swift */,
 				41E0E1E926AA135200EF06DA /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -644,6 +647,7 @@
 				414B627826AC7D41003A7F36 /* ProductListViewController+Extensions.swift in Sources */,
 				414B62A526ADB28C003A7F36 /* DefaultsManagable.swift in Sources */,
 				414B623E26AB01FB003A7F36 /* UIColor+Extensions.swift in Sources */,
+				41B018B0274A5941005835AC /* SceneDelegate.swift in Sources */,
 				414B62A726ADB329003A7F36 /* Serializable+Protocol.swift in Sources */,
 				414B627226AC7CA8003A7F36 /* ProductListFlowCoordinator.swift in Sources */,
 				414B626C26AC7B92003A7F36 /* ApplicationFlowCoordinator.swift in Sources */,
@@ -756,7 +760,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -811,7 +815,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -830,6 +834,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3439S6K9QQ;
 				INFOPLIST_FILE = "Harry Potter Ilke/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -850,6 +855,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3439S6K9QQ;
 				INFOPLIST_FILE = "Harry Potter Ilke/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
