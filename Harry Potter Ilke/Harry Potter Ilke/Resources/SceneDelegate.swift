@@ -60,7 +60,6 @@ extension SceneDelegate {
         guard let currentWindow = window else { return }
         self.appCoordinator = ApplicationFlowCoordinator(window: currentWindow, dependencyProvider: ApplicationComponentsFactory())
         self.appCoordinator.start()
-
     }
 }
 
